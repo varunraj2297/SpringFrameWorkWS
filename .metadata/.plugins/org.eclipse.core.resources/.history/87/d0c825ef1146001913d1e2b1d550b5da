@@ -1,9 +1,0 @@
-package com.nt.dto;
-
-public class BankDTO {
-	private int sno;
-	private String accno;
-	private String holderName;
-	private String addrs;
-	private int balance;
-}

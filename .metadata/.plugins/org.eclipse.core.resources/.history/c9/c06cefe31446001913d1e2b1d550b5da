@@ -1,7 +1,0 @@
-package com.nt.dao;
-
-public interface BankDAO {
-	public String deposit(int accno,int amount) throws Exception;
-	public String moneyTransfer(int srcAccno,int targetAccno,int amount) throws Exception;
-	public String withdraw(int accno,int amount) throws Exception;
-}

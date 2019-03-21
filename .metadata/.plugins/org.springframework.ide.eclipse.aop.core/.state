@@ -3,8 +3,8 @@
 <aop-project name="IOC-Proj12-ConstructorInjectionResolving"/>
 <aop-project name="IOC-Proj36-P&amp;C NameSpacesUsingAC"/>
 <aop-project name="IOC-Proj11-LayeredApplication-Bank-RealTimeDI"/>
-<aop-project name="IOC-Proj31-DependencyCheck"/>
 <aop-project name="IOC-Proj21-BeanInheritance-UsingSetterInjection"/>
+<aop-project name="IOC-Proj31-DependencyCheck"/>
 <aop-project name="IOC-Proj27-FactoryMethodBeanInitialization"/>
 <aop-project name="IOC-Proj34-BankProj-LayeredApplication-NestedBeanFactory"/>
 <aop-project name="IOC-Proj29-BasicSetterInjection-BeanScopes"/>
