@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="baseBike" class="com.nt.beans.Bike" abstract="true">
+		<constructor-arg name="idleSpeed" value="200KMPH"/>
+		<constructor-arg name="tankCapacity" value="20Ltrs"/>
+	</bean>
+	
+	<bean id="rajaBike" class="com.nt.beans.Bike" parent="baseBike">
+		<constructor-arg name="regno" value="TS09JH9869"/>
+		<constructor-arg name="ownerName" value="Raja"/>
+		<constructor-arg name="engineNo" value="456987"/>
+		<constructor-arg name="colour" value="yellow"/>
+		<constructor-arg name="engineCC" value="150cc"/>
+		<constructor-arg name="idleMilege" value="50Km"/>
+	</bean>
+
+	<bean id="rameshBike" class="com.nt.beans.Bike" parent="baseBike">
+		<constructor-arg name="regno" value="TS09JK8967"/>
+		<constructor-arg name="ownerName" value="Ramesh"/>
+		<constructor-arg name="engineNo" value="4569123"/>
+		<constructor-arg name="colour" value="Red"/>
+		<constructor-arg name="engineCC" value="220cc"/>
+		<constructor-arg name="idleMilege" value="60Km"/>
+	</bean>
+</beans>

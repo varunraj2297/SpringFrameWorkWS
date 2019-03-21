@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 	<!-- Dependent Class -->
+ 	<bean id="dt1" class="java.util.Date"/>
+ 	<bean id="dt2" class="java.util.Date">
+ 		<property name="date" value="20"/>
+ 		<property name="month" value="3"/>
+ 		<property name="year" value="60"/>
+ 		<property name="hours" value="0"/> 
+ 	</bean>
+ 	<!-- Target class -->
+ 	<bean class="com.nt.beans.WishMessageGenerator">
+ 		<constructor-arg name="date" ref="dt1"/>
+ 	</bean>
+ 	
+ 	<bean class="com.nt.beans.WishMessageGenerator">
+ 		<constructor-arg name="date" ref="dt2"/>
+ 	</bean>
+ </beans>

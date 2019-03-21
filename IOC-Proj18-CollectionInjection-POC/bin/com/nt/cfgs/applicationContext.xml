@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="dt1" class="java.util.Date">
+		<property name="date" value="20"/>
+		<property name="month" value="4"/>
+		<property name="year" value="65"/>
+	</bean>
+	
+	<bean class="java.util.Date">
+		<property name="date" value="22"/>
+		<property name="month" value="5"/>
+		<property name="year" value="66"/>
+	</bean>
+	
+
+	<bean id="fexp" class="java.util.Date">
+		<property name="date" value="23"/>
+		<property name="month" value="7"/>
+		<property name="year" value="100"/>
+	</bean>
+	
+	<bean id="fda" class="java.util.Date">
+		<property name="date" value="23"/>
+		<property name="month" value="7"/>
+		<property name="year" value="101"/>
+	</bean>
+	<bean id="fdg" class="java.util.Date">
+		<property name="date" value="23"/>
+		<property name="month" value="7"/>
+		<property name="year" value="102"/>
+	</bean>
+	<bean id="fds" class="java.util.Date">
+		<property name="date" value="23"/>
+		<property name="month" value="7"/>
+		<property name="year" value="103"/>
+	</bean>
+	<bean id="fdv" class="java.util.Date">
+		<property name="date" value="23"/>
+		<property name="month" value="7"/>
+		<property name="year" value="104"/>
+	</bean>
+	
+	<bean id="fa" class="java.util.Date">
+		<property name="date" value="24"/>
+		<property name="month" value="7"/>
+		<property name="year" value="104"/>
+	</bean>
+	<bean id="fg" class="java.util.Date">
+		<property name="date" value="25"/>
+		<property name="month" value="7"/>
+		<property name="year" value="104"/>
+	</bean>
+	<bean id="fs" class="java.util.Date">
+		<property name="date" value="26"/>
+		<property name="month" value="7"/>
+		<property name="year" value="104"/>
+	</bean>
+	<bean id="fp" class="java.util.Date">
+		<property name="date" value="27"/>
+		<property name="month" value="7"/>
+		<property name="year" value="104"/>
+	</bean>
+	
+		
+	<!-- better to use date beans as inner beans. for poc purpose i have took them as as simple dependent -->
+	
+	
+	<bean id="shoe" class="com.nt.beans.ShoeStore">
+		<constructor-arg>
+			<array>
+				<value>11</value>
+				<value>10</value>
+				<value>10.5</value>
+				<value>9</value>
+			</array>
+		</constructor-arg>
+	</bean>
+	
+	<bean class="com.nt.beans.StudentDOB">
+		<constructor-arg>
+			<array>
+				<ref bean="dt1"/>
+				<ref bean="java.util.Date#0"/>
+			</array>
+		</constructor-arg>
+	</bean>
+	
+	
+	<bean id="studNames" class="com.nt.beans.College">
+		<property name="studentNames">
+			<list>
+				<value>raja</value>
+				<value>rani</value>
+				<value>raja</value>
+			</list>
+		</property>
+	
+	</bean>
+	
+	<bean id="airtel" class="com.nt.beans.AirtelService">
+		<constructor-arg>
+			<set>
+				<value>6369745332</value>
+				<value>6369545332</value>
+				<value>6369565332</value>
+			</set>
+		</constructor-arg>
+	</bean>
+
+	<bean id="fruits" class="com.nt.beans.FruitStore">
+		<property name="fruitsInfo">
+			<map>
+				<entry>
+					<key>
+						<value>mango</value>
+					</key>
+					<value>yellow</value>					
+				</entry>
+				<entry key="apple">
+					<value>red</value>	
+				</entry>
+				<entry value="black">
+					<key>
+						<value>grapes</value>
+					</key>
+				</entry>
+				<entry key="custard apple" value="green"/>
+			</map>
+		</property>
+		
+		<property name="fruitsExpiry">
+			<map>
+				<entry>
+					<key>
+						<value>mango</value>
+					</key>
+					<ref bean="fexp"/>					
+				</entry>
+				<entry key="apple">
+					<ref bean="fexp"/>		
+				</entry>
+				<entry value-ref="fexp">
+					<key>
+						<value>grapes</value>
+					</key>
+				</entry>
+				<entry key="custard apple" value-ref="fexp"/>
+			</map>
+		</property>
+		
+		
+		<property name="fruitsImportExportDate">
+			<map>
+				<entry>
+					<key>
+						 <ref bean="fa"/>  
+						<!--<value>60</value>-->
+					</key>
+					<ref bean="fa"/>				
+				</entry>
+				<entry key-ref="fg">
+					<ref bean="fg"/>		
+				</entry>
+				<entry value-ref="fp">
+					<key>
+						<ref bean="fp"/>
+					</key>
+				</entry>
+				<entry key-ref="fs" value-ref="fs"/>
+			</map>
+		</property>
+		
+		<property name="fruitsDeliveredTo">
+			<map>
+				<entry>
+					<key>
+						<ref bean="fda"/>
+					</key>
+					<value>ameerpet</value>					
+				</entry>
+				<entry key-ref="fdg">
+					<value>guntur</value>		
+				</entry>
+				<entry value="sec-bad">
+					<key>
+						<ref bean="fds"/>
+					</key>
+				</entry>
+				<entry key-ref="fdv" value="vizag"/>
+			</map>
+		</property>
+	</bean>
+	
+	<bean id="emp" class="com.nt.beans.EmployeeJobDetails">
+		<constructor-arg>
+			<props>
+				<prop key="raja">Faculty</prop>
+				<prop key="rani">developer</prop>
+				<prop key="ravi">staff</prop>
+			</props>
+		</constructor-arg>
+	
+	</bean>
+</beans>

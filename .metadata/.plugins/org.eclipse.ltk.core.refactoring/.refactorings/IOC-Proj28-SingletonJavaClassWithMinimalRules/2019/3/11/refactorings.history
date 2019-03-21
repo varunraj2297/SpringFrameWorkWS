@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Printer.java&apos; to &apos;IOC-Proj29-BasicSetterInjection-BeanScopes/src/com.nt.beans&apos;&#x0D;&#x0A;- Original project: &apos;IOC-Proj28-SingletonJavaClassWithMinimalRules&apos;&#x0D;&#x0A;- Destination element: &apos;IOC-Proj29-BasicSetterInjection-BeanScopes/src/com.nt.beans&apos;&#x0D;&#x0A;- Original element: &apos;com.nt.singleton.Printer.java&apos;" description="Copy compilation unit" destination="=IOC-Proj29-BasicSetterInjection-BeanScopes/src&lt;com.nt.beans" element1="/src&lt;com.nt.singleton{Printer.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1552210655478" units="1" version="1.0"/>
+</session>

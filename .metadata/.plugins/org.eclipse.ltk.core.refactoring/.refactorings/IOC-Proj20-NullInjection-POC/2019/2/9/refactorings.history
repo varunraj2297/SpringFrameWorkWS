@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;NullInjectionTest.java&apos; to &apos;IOC-Proj21-BeanInheritance/src/com.nt.test&apos;&#x0D;&#x0A;- Original project: &apos;IOC-Proj20-NullInjection-POC&apos;&#x0D;&#x0A;- Destination element: &apos;IOC-Proj21-BeanInheritance/src/com.nt.test&apos;&#x0D;&#x0A;- Original element: &apos;com.nt.test.NullInjectionTest.java&apos;" description="Copy compilation unit" destination="=IOC-Proj21-BeanInheritance/src&lt;com.nt.test" element1="/src&lt;com.nt.test{NullInjectionTest.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1551326808424" units="1" version="1.0"/>
+</session>

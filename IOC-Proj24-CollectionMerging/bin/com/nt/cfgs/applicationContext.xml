@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans default-merge="true" xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="base1stYear" class="com.nt.beans.EnggStudent" abstract="true">
+		<property name="subjects">
+			<set>
+				<value>M1</value>
+				<value>English</value>
+				<value>C</value>
+			</set>
+		</property>
+	</bean>
+	
+	<bean id="ece1stYearStudent" class="com.nt.beans.EnggStudent" parent="base1stYear">
+		<property name="subjects">
+			<set merge="true">
+				<value>Drawing</value>
+				<value>MM</value>
+			</set>
+		</property>	
+	</bean>
+	
+	<bean id="rjs" class="com.nt.beans.EnggStudent" parent="base1stYear">
+		<property name="subjects">
+			<set merge="default">
+				<value>Drawing</value>
+				<value>MM</value>
+			</set>
+		</property>
+	</bean>
+
+</beans>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.nt.beans.Store.java&apos; to &apos;ShoeStore.java&apos;&#x0D;&#x0A;- Original project: &apos;IOC-Proj18-SpringBeanProperties-POC&apos;&#x0D;&#x0A;- Original element: &apos;com.nt.beans.Store.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.nt.beans.ShoeStore.java&apos;" description="Rename compilation unit &apos;Store.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;com.nt.beans{Store.java" name="ShoeStore.java" references="false" stamp="1551089852094" version="1.0"/>
+</session>

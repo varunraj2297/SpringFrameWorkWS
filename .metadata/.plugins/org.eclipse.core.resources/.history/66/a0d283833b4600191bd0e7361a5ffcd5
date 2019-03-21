@@ -1,0 +1,26 @@
+package com.nt.controller;
+
+import com.nt.service.BankService;
+
+public class MainController {
+	private BankService service;
+
+	public MainController(BankService service) {
+		this.service = service;
+	}
+	
+	public String deposit(int accno, int amount) throws Exception {
+		return service.deposit(accno, amount);
+	}
+
+	public String moneyTransfer(int srcAccno, int targetAccno, int amount) throws Exception {
+		return service.moneyTransfer(srcAccno, targetAccno, amount);
+	}
+
+	
+	public String withdraw(int accno, int amount) throws Exception {
+		return service.withdraw(accno, amount);
+	}
+	
+	
+}

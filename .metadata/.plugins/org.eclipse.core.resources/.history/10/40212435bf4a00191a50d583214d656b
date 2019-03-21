@@ -1,0 +1,5 @@
+#French properties  file
+btn.cap1=insérer {1}
+btn.cap2=mettre à jour
+btn.cap3=effacer
+btn.cap4=vue

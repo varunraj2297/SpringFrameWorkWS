@@ -1,0 +1,18 @@
+CREATE TABLE BANK(CID NUMBER(5) PRIMARY KEY,CNAME VARCHAR2(10),
+CADD VARCHAR2(10),SI NUMBER(15,6),CI NUMBER(15,6))
+
+
+SQL> desc bank;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ CID                                       NOT NULL NUMBER(5)
+ CNAME                                              VARCHAR2(10)
+ CADD                                               VARCHAR2(10)
+ SI                                                 NUMBER(15,6)
+ CI                                                 NUMBER(15,6)
+ 
+ 
+ create sequence cid_seq start with 1 increment by 1;
+ 
+ 
+ INSERT INTO BANK VALUES(CID_SEQ.NEXTVAL,?,?,?,?)

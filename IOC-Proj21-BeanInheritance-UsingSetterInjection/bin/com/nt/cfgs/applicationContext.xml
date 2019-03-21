@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="baseBike" class="com.nt.beans.Bike" abstract="true">
+		<property name="idleSpeed" value="200KMPH"/>
+		<property name="tankCapacity" value="20Ltrs"/>
+	</bean>
+	
+	<bean id="rajaBike" class="com.nt.beans.Bike" parent="baseBike">
+		<property name="regno" value="TS09JH9869"/>
+		<property name="ownerName" value="Raja"/>
+		<property name="engineNo" value="456987"/>
+		<property name="colour" value="yellow"/>
+		<property name="engineCC" value="150cc"/>
+		<property name="idleMilege" value="50Km"/>
+	</bean>
+
+	<bean id="rameshBike" class="com.nt.beans.Bike" parent="baseBike">
+		<property name="regno" value="TS09JK8967"/>
+		<property name="ownerName" value="Ramesh"/>
+		<property name="engineNo" value="4569123"/>
+		<property name="colour" value="Red"/>
+		<property name="engineCC" value="220cc"/>
+		<property name="idleMilege" value="60Km"/>
+	</bean>
+</beans>

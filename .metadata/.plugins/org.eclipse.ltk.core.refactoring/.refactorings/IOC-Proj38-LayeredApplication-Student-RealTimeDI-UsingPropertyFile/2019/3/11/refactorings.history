@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.nt.commons&apos; to &apos;IOC-Proj39-BankProj-LayeredApplication-NestedBeanFactory-UsingProperties-AC/src&apos;&#x0D;&#x0A;- Original project: &apos;IOC-Proj38-LayeredApplication-Student-RealTimeDI-UsingPropertyFile&apos;&#x0D;&#x0A;- Destination element: &apos;IOC-Proj39-BankProj-LayeredApplication-NestedBeanFactory-UsingProperties-AC/src&apos;&#x0D;&#x0A;- Original element: &apos;IOC-Proj38-LayeredApplication-Student-RealTimeDI-UsingPropertyFile/src/com.nt.commons&apos;" description="Copy package" destination="=IOC-Proj39-BankProj-LayeredApplication-NestedBeanFactory-UsingProperties-AC/src" element1="/src&lt;com.nt.commons" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1552710112246" version="1.0"/>
+</session>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="dt1" class="java.util.Date">
+		<property name="date" value="20"/>
+		<property name="month" value="4"/>
+		<property name="year" value="65"/>
+	</bean>
+	
+	<bean class="java.util.Date">
+		<property name="date" value="22"/>
+		<property name="month" value="5"/>
+		<property name="year" value="66"/>
+	</bean>
+	
+	
+	
+	<bean id="shoe" class="com.nt.beans.ShoeStore">
+		<constructor-arg>
+			<array>
+				<value>11</value>
+				<value>10</value>
+				<value>10.5</value>
+				<value>9</value>
+			</array>
+		</constructor-arg>
+	</bean>
+	
+	<bean class="com.nt.beans.StudentDOB">
+		<constructor-arg>
+			<array>
+				<ref bean="dt1"/>
+				<ref bean="java.util.Date#0"/>
+			</array>
+		</constructor-arg>
+	</bean>
+
+</beans>

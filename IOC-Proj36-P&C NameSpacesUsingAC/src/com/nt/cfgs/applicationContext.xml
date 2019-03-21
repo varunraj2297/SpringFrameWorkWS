@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+	
+	<bean id="deptDOO" class="java.util.Date" p:year="100" p:month="6" p:date="28"/>
+	<bean id="empDOJ" class="java.util.Date" p:year="110" p:month="6" p:date="28"/>
+	
+	
+	<bean id="dept" class="com.nt.beans.Department" 
+			c:deptNo="101" c:deptName="Accounts" c:doo-ref="deptDOO"/>
+			
+	<bean id="emp" class="com.nt.beans.Employee" 
+			p:empno="1001" p:ename="raja" p:doj-ref="empDOJ" p:dept-ref="dept"/>
+
+</beans>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans default-autowire="default" default-autowire-candidates="tp,tp2,tp3" xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+	 <bean id="tp" class="com.nt.beans.TourPlan" autowire-candidate="false">
+		<property name="places">
+			<list>
+				<value>mahabaleshwar</value>
+				<value>kodaikanal</value>
+				<value>munnar</value>
+			</list>
+		</property>
+	</bean>  
+	
+	<bean id="tp2" class="com.nt.beans.TourPlan">
+		<property name="places">
+			<list>
+				<value>Hyderabad</value>
+				<value>Delhi</value>
+				<value>Bangalore</value>
+			</list>
+		</property>
+		<property name="insured" value="true"/>
+	</bean> 
+		
+	<bean id="tp3" class="com.nt.beans.TourPlan">
+		<property name="places">
+			<list>
+				<value>America</value>
+				<value>Australia</value>
+				<value>England</value>
+			</list>
+		</property>
+	</bean>
+	<bean id="agent" class="com.nt.beans.TravelAgent" autowire="byName">
+		<!-- <constructor-arg ref="tp3"/> -->
+	
+	</bean>
+
+</beans>

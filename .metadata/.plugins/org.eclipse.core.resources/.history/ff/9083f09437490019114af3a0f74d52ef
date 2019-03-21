@@ -1,0 +1,52 @@
+package com.nt.jdbc;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Properties;
+
+public class JDBCAppWithPropertiesFile {
+	private static final String COUNT_QUERY="SELECT COUNT(*) FROM ";
+	
+	public static void main(String[] args){
+		Properties props=null;
+		try(InputStream is=new FileInputStream("com/nt/commons/DbProperties.properties")){
+			props=new Properties();
+			props.load(is);
+			
+		}
+		catch(FileNotFoundException fnfe) {
+			fnfe.printStackTrace();
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		try {
+			Class.forName(props.getProperty("oracle.driver"));
+		}
+		catch (ClassNotFoundException cnfe) {
+			cnfe.printStackTrace();
+		}
+		
+		try(Connection con=DriverManager.getConnection(props.getProperty("oracle.url"),props.getProperty("oracle.userName"),props.getProperty("oracle.password"))){
+			try(Statement st=con.createStatement()){
+				try(ResultSet rs=st.executeQuery(COUNT_QUERY)){
+					rs.next();
+					System.out.println("count::"+rs.getInt(1));
+				}
+			}
+		}
+		catch (SQLException se) {
+			se.printStackTrace();
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+}
