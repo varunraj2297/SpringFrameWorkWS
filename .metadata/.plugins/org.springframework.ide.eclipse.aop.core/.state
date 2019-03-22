@@ -13,11 +13,13 @@
 <aop-project name="IOC-Proj41-Spring-I18n"/>
 <aop-project name="IOC-Proj26-DependencyLookup using static variable"/>
 <aop-project name="IOC-Proj37-BeanCollabaration-LooseCouplingUsingAc"/>
+<aop-project name="IOC-Proj44-UtilNameSpace"/>
 <aop-project name="IOC-Proj01-BasicSetterInjection"/>
 <aop-project name="IOC-Proj38-LayeredApplication-Student-RealTimeDI-UsingPropertyFile"/>
 <aop-project name="IOC-Proj42-BankProj-LayeredApplication-NestedBeanFactory-UsingProperties_AC_with_context_place_holder_tag_in_context_nameSpace"/>
 <aop-project name="IOC-Proj43-Spring-I18n-EventHandling"/>
 <aop-project name="IOC-Proj20-NullInjection-POC"/>
+<aop-project name="IOC-Proj45-BeanLifeCycle-Declaratice Approach"/>
 <aop-project name="IOC-Proj39-BankProj-LayeredApplication-NestedBeanFactory-UsingProperties-AC"/>
 <aop-project name="IOC-Proj23-LayeredApplication-Student-RealTimeDI-WithBeanInheritance"/>
 <aop-project name="IOC-Proj14-CyclicDependenyManagement-Solution1-POC"/>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.3.xsd">
+
+	<bean id="tdate" class="java.util.Date"/>
+	<bean id="dob" class="java.util.Date" p:year="97" p:month="2" p:date="1"/>
+	
+	<util:list id="list1" list-class="java.util.ArrayList" value-type="java.lang.String">
+		<value>raja</value>
+		<value>rani</value>
+		<value>rani</value>
+		<value>raja</value>
+	</util:list>	
+	
+	<util:list id="list2" list-class="java.util.LinkedList" value-type="java.util.Date">
+		<ref bean="tdate"/>
+		<ref bean="dob"/>
+	</util:list>
+	
+	<util:set id="set1" set-class="java.util.HashSet" value-type="java.lang.Long">
+		<value>9999999999</value>
+		<value>8888888888</value>
+		<value>9999999999</value>
+	</util:set>
+	
+	<util:set id="set2" set-class="java.util.LinkedHashSet" value-type="java.util.Date">
+		<ref bean="tdate"/>
+		<ref bean="dob"/>	
+	</util:set>
+	
+	<util:map id="map1" map-class="java.util.HashMap" key-type="java.lang.String" value-type="java.lang.Long">
+		<entry><key><value>raja</value></key><value>99966696966</value></entry>
+		<entry><key><value>rani</value></key><value>78945512236</value></entry>
+		<entry key="roy"><value>65478932145</value></entry>
+		<entry key="ram" value="98989898989"></entry>
+	</util:map>
+	
+	<util:map id="map2" map-class="java.util.LinkedHashMap" key-type="java.lang.String" value-type="java.util.Date">
+		<entry><key><value>raja</value></key><ref bean="tdate"/></entry>
+		<entry value-ref="dob"><key><value>rani</value></key></entry>
+	</util:map>
+	
+	<util:properties id="props1" >
+		<prop key="raja"/>
+		<prop key="rani"/>
+		<prop key="roy"/>
+		<prop key="raja"/>
+	</util:properties>
+	
+	<util:properties id="props2" location="classpath:com/nt/commons/info.properties" value-type="java.lang.Long">
+		<prop key="raja"/>
+		<prop key="rani"/>
+		<prop key="roy"/>
+		<prop key="ravi"/>	
+	</util:properties>
+	
+	<util:constant id="mPI" static-field="java.lang.Math.PI"/>
+</beans>
