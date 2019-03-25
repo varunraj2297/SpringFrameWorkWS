@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.nt.beans.EmployeeDetails"/>
-<fullyQualifiedTypeName name="com.nt.beans.Bike"/>
-<fullyQualifiedTypeName name="com.nt.beans.EnggStudent"/>
-<fullyQualifiedTypeName name="Inner"/>
-<fullyQualifiedTypeName name="com.nt.beans.ProfessionalCricketer"/>
 <fullyQualifiedTypeName name="com.nt.test.DependencyLookupTest"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.BeanFactory"/>
 <fullyQualifiedTypeName name="com.nt.beans.CricketerBat"/>
@@ -37,8 +32,6 @@
 <fullyQualifiedTypeName name="com.nt.bo.BankBO"/>
 <fullyQualifiedTypeName name="com.nt.vo.BankVO"/>
 <fullyQualifiedTypeName name="com.nt.beans.Department"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.support.DefaultListableBeanFactory"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.xml.XmlBeanDefinitionReader"/>
 <fullyQualifiedTypeName name="com.nt.beans.Employee"/>
 <fullyQualifiedTypeName name="com.nt.controller.StudentController"/>
 <fullyQualifiedTypeName name="com.nt.controller.MainController"/>
@@ -57,7 +50,14 @@
 <fullyQualifiedTypeName name="java.lang.Float"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
-<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
-<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
 <fullyQualifiedTypeName name="com.nt.beans.CheckVoterEligibility"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.support.DefaultListableBeanFactory"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.InitializingBean"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.DisposableBean"/>
+<fullyQualifiedTypeName name="com.nt.beans.Engine"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.xml.XmlBeanDefinitionReader"/>
+<fullyQualifiedTypeName name="com.nt.beans.Vehicle"/>
+<fullyQualifiedTypeName name="org.springframework.context.ApplicationContextAware"/>
+<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
 </qualifiedTypeNameHistroy>

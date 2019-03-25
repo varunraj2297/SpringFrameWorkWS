@@ -8,6 +8,7 @@
 <aop-project name="IOC-Proj27-FactoryMethodBeanInitialization"/>
 <aop-project name="IOC-Proj34-BankProj-LayeredApplication-NestedBeanFactory"/>
 <aop-project name="IOC-Proj29-BasicSetterInjection-BeanScopes"/>
+<aop-project name="IOC-Proj47-TraditionalDependencyLookup"/>
 <aop-project name="IOC-Proj05-BeanCollabaration-LooseCoupling"/>
 <aop-project name="IOC-Proj24-CollectionMerging"/>
 <aop-project name="IOC-Proj41-Spring-I18n"/>
@@ -30,6 +31,7 @@
 <aop-project name="IOC-Proj26-DependencyLookup_Single IOC_Container Ext1"/>
 <aop-project name="IOC-Proj35-P&amp;C NameSpaces"/>
 <aop-project name="IOC-Proj17-InnerBean-POC"/>
+<aop-project name="IOC-Proj48-AwareInjection"/>
 <aop-project name="IOC-Proj30-AutoWiring"/>
 <aop-project name="IOC-Proj32-LayeredApplication-NestedBeanFactory"/>
 <aop-project name="IOC-Proj13-CyclicDependenyManagement-Problem-POC"/>
@@ -37,6 +39,7 @@
 <aop-project name="IOC-Proj18-CollectionInjection-POC"/>
 <aop-project name="IOC-Proj10-LayeredApplication-Student-RealTimeDI"/>
 <aop-project name="IOC-Proj26-DependencyLookup_Single IOC_Container Ext2"/>
+<aop-project name="IOC-Proj46-BeanLifeCycle-Programmatic-Approach"/>
 <aop-project name="IOC-Proj33-LayeredApplication-NestedBeanFactory(FriendProj)"/>
 <aop-project name="IOC-Proj04-BeanCollabaration-TightCoupling"/>
 </aop-reference-model>

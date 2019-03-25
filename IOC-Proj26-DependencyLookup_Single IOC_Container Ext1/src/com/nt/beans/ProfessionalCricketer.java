@@ -20,6 +20,6 @@ public class ProfessionalCricketer {
 	public void batting(BeanFactory factory,CricketerBat bat){
 		System.out.println(name+" is batting");
 		bat.scoreRuns();
-	}
+	}//not recommended becoz it makes class invasive
 	
 }

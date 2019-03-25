@@ -18,10 +18,12 @@
 //com.springsource.config.ui.prefs.activePageIndex\:/IOC-Proj23-LayeredApplication-Student-RealTimeDI-WithBeanInheritance/src/com/nt/cfgs/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/IOC-Proj24-CollectionMerging/src/com/nt/cfgs/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/IOC-Proj25-BeanAliasName/src/com/nt/cfgs/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/IOC-Proj26-DependencyLookup\ using\ static\ variable/src/com/nt/cfgs/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/IOC-Proj26-DependencyLookup/src/com/nt/cfgs/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/IOC-Proj26-DependencyLookup2/src/com/nt/cfgs/app.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/IOC-Proj26-DependencyLookup2/src/com/nt/cfgs/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/IOC-Proj26-DependencyLookup_Single\ IOC_Container\ Ext1/src/com/nt/cfgs/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/IOC-Proj26-DependencyLookup_Single\ IOC_Container\ Ext2/src/com/nt/cfgs/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/IOC-Proj27-DependencyLookup-Improvisasion/src/com/nt/cfgs/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/IOC-Proj27-DependencyLookup_Improvised/src/com/nt/cfgs/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/IOC-Proj27-FactoryMethodBeanInitialization/src/com/nt/cfgs/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
@@ -47,6 +49,8 @@
 //com.springsource.config.ui.prefs.activePageIndex\:/IOC-Proj43-Spring-I18n-EventHandling/src/com/nt/cfgs/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/IOC-Proj44-UtilNameSpace/src/com/nt/cfgs/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/IOC-Proj45-BeanLifeCycle-Declaratice\ Approach/src/com/nt/cfgs/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/IOC-Proj46-BeanLifeCycle-Programmatic-Approach/src/com/nt/cfgs/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/IOC-Proj47-TraditionalDependencyLookup/src/com/nt/cfgs/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/IOC-Proj7-StrategyDP-Spring/src/com/nt/cfgs/applicationContextForMobile.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/IOC-Proj7-StrategyDP-Spring/src/com/nt/cfgs/applicationContextForVehicle.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/IOC-Proj8-LayeredApplication-Student-RealTimeDI/src/com/nt/cfgs/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>

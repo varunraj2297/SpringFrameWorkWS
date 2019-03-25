@@ -21,6 +21,6 @@ public class ProfessionalCricketer {
 		System.out.println(name+" is batting");
 		CricketerBat bat=factory.getBean(CricketerBat.class);
 		bat.scoreRuns();
-	}
+	}//not recommended becoz it makes class invasive
 	
 }
