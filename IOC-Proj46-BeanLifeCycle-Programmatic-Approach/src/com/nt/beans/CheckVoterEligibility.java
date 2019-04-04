@@ -21,7 +21,6 @@ public class CheckVoterEligibility implements InitializingBean,DisposableBean{
 	}
 	
 	
-	
 	public void myInit() {
 		System.out.println("CheckVoterEligibility.myInit()");
 	}
@@ -31,18 +30,21 @@ public class CheckVoterEligibility implements InitializingBean,DisposableBean{
 		return (age<=18)?"Mr/Miss."+name+" you are not eligible to vote verified on "+verifiedOn:"Mr/Miss."+name+" you are eligible to vote "+verifiedOn;
 	}
 	
-	public void myDestory() {
+	public void myDestroy() {
 		System.out.println("CheckVoterEligibility.myDestory()");
 	}
 	
-	@Override
-	public void destroy() throws Exception {
-		System.out.println("CheckVoterEligibility.destroy()");
-		name=null;
-		age=0;
-		addrs=null;
-		verifiedOn=null;
-	}
+	
+	  @Override
+	  public void destroy() throws Exception {
+	  System.out.println("CheckVoterEligibility.destroy()"); 
+	  name=null; age=0;
+	  addrs=null; verifiedOn=null; 
+	  }
+	 
+	  
+	  
+	
 	
 	@Override
 	public void afterPropertiesSet() throws Exception {

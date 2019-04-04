@@ -20,6 +20,15 @@ public class AwareInjectionTest {
 		vehicle.journey("hyd","bangalore");
 		//close container obj
 		((AbstractApplicationContext) ctx).close();
+		
+		
+		/*Advantages:-
+		  1)Over comes from creating 2 containers
+		  2)over comes from creating target class object twice 
+		/*limits-
+		1)target class becomes invasive because of implementing xxxAware Interface
+		2) injected beanid visible to all methods 
+		3)container automatically injected bean class object visible to all methods
+	*/
 	}
-
 }

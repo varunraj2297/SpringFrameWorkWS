@@ -51,8 +51,18 @@
 //com.springsource.config.ui.prefs.activePageIndex\:/IOC-Proj45-BeanLifeCycle-Declaratice\ Approach/src/com/nt/cfgs/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/IOC-Proj46-BeanLifeCycle-Programmatic-Approach/src/com/nt/cfgs/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/IOC-Proj47-TraditionalDependencyLookup/src/com/nt/cfgs/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/IOC-Proj48-AwareInjection/src/com/nt/cfgs/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/IOC-Proj49-NeedOfLookUpMethodDL-Problem/src/com/nt/cfgs/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/IOC-Proj50-NeedOfLookUpMethodDL-Solution1UsingTraditionalDL/src/com/nt/cfgs/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/IOC-Proj51-NeedOfLookUpMethodDL-Solution2UsingTraditionalDL-AwareInjectio/src/com/nt/cfgs/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/IOC-Proj52-LookUpMethodDL-FinalSolution/src/com/nt/cfgs/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/IOC-Proj54-FactoryBean/src/com/nt/cfgs/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/IOC-Proj55-FactoryBean-IPLScoreUseCase/src/com/nt/cfgs/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/IOC-Proj56-StaticFactoryMethod-IPLScoreUseCase/src/com/nt/cfgs/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/IOC-Proj57-InstanceFactoryMethod-IPLScoreUseCase/src/com/nt/cfgs/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/IOC-Proj7-StrategyDP-Spring/src/com/nt/cfgs/applicationContextForMobile.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/IOC-Proj7-StrategyDP-Spring/src/com/nt/cfgs/applicationContextForVehicle.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/IOC-Proj8-LayeredApplication-Student-RealTimeDI/src/com/nt/cfgs/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/IOC-Proj9-LayeredApplication-Bank-RealTimeDI/src/com/nt/cfgs/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+//com.springsource.config.ui.prefs.activePageIndex\:/Ioc-Proj53-MethodInjectionOrMethodReplacer/src/com/nt/cfgs/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 eclipse.preferences.version=1

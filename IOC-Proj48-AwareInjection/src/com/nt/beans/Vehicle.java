@@ -17,7 +17,6 @@ public class Vehicle implements ApplicationContextAware{
 	@Override
 	public void setApplicationContext(ApplicationContext ctx) throws BeansException {
 		this.ctx=ctx;
-		
 	}
 	
 	public void entertainment() {

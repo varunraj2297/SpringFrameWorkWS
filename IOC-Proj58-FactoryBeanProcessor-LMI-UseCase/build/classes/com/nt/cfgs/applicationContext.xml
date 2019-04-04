@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+	
+	<bean id="drds" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
+		<property name="url" value="jdbc:oracle:thin:@localhost:1521:xe"/>
+		<property name="username" value="hr"/>
+		<property name="password" value="hr"/>		
+	</bean>
+	
+	<bean id="dao" class="com.nt.dao.DAO">
+		<constructor-arg ref="drds"/>
+	</bean>
+
+	<bean id="stubo" class="com.nt.bo.StudentBO" scope="prototype"/>
+	<bean id="empbo" class="com.nt.bo.EmployeeBO" scope="prototype"/>
+	
+	<bean id="service" class="com.nt.service.Service">
+		<constructor-arg ref="dao"/>
+		<lookup-method bean="stubo" name="createStudentBO"/>
+		<lookup-method bean="empbo" name="createEmployeeBO"/>
+	</bean>
+	
+	<bean id="bpp" class="com.nt.bpp.BOPostProcessor"/>
+	
+</beans>

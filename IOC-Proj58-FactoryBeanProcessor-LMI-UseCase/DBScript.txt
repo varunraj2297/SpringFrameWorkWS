@@ -1,0 +1,7 @@
+SQL> create table register_student(name varchar2(10),addrs varchar2(10),email varchar2(10),mobileNo number(12),course varchar2(15),doj Date);
+
+Table created.
+
+SQL> create table register_employee(name varchar2(10),addrs varchar2(10),email varchar2(10),mobileNo number(12),desg varchar2(15),doj Date);
+
+Table created.
