@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
 <aop-project name="SpringData-Proj02-JPA-SpringBoot-PagingAndSorting"/>
-<aop-project name="IOC-Proj79-Anno-BeanLifeCycle-Declaratice Approach-atPostConstructandatPreDestroy"/>
 <aop-project name="IOC-Proj72-Anno-Propertiesfile"/>
+<aop-project name="IOC-Proj79-Anno-BeanLifeCycle-Declaratice Approach-atPostConstructandatPreDestroy"/>
 <aop-project name="IOC-Proj69-Anno-LayeredApplication-Student-RealTimeDI-UsingPropertyFile"/>
 <aop-project name="IOC-Proj34-BankProj-LayeredApplication-NestedBeanFactory"/>
 <aop-project name="DAO-Proj10-BasicCurdOperations-Profiles"/>
@@ -18,18 +18,18 @@
 <aop-project name="DAO-Proj23-MappingSQLOperationsAsSubClasses"/>
 <aop-project name="IOC-Proj74-Anno-@Inject@Named"/>
 <aop-project name="IOC-Proj26-DependencyLookup_Single IOC_Container Ext2"/>
-<aop-project name="DAO-Proj22-SimpleJdbcCall-ProcessingMultipleRecordsUsingFunction"/>
 <aop-project name="IOC-Proj46-BeanLifeCycle-Programmatic-Approach"/>
-<aop-project name="SpringData-Proj03-SpringBoot-BasicCurdOperations-NoSql-MongoDb"/>
+<aop-project name="DAO-Proj22-SimpleJdbcCall-ProcessingMultipleRecordsUsingFunction"/>
 <aop-project name="DAO-Proj17-SimpleJdbcInsert-AutoEmpNo-BPSPS"/>
+<aop-project name="SpringData-Proj03-SpringBoot-BasicCurdOperations-NoSql-MongoDb"/>
 <aop-project name="IOC-Proj82-100p-MethodInjectionOrMethodReplacer"/>
-<aop-project name="IOC-Proj31-DependencyCheck"/>
 <aop-project name="IOC-Proj21-BeanInheritance-UsingSetterInjection"/>
+<aop-project name="IOC-Proj31-DependencyCheck"/>
 <aop-project name="IOC-Proj29-BasicSetterInjection-BeanScopes"/>
 <aop-project name="IOC-Proj39-BankProj-LayeredApplication-NestedBeanFactory-UsingProperties-AC"/>
 <aop-project name="IOC-Proj54-FactoryBean"/>
-<aop-project name="IOC-Proj57-InstanceFactoryMethod-IPLScoreUseCase"/>
 <aop-project name="DAO-Proj15-SpringBoot-NamedParameters"/>
+<aop-project name="IOC-Proj57-InstanceFactoryMethod-IPLScoreUseCase"/>
 <aop-project name="IOC-Proj22-BeanInheritance-UsingConstructorInjection"/>
 <aop-project name="IOC-Proj63-PropertyEditors-BeanFactory"/>
 <aop-project name="IOC-Proj65-Anno-Required"/>
@@ -50,6 +50,7 @@
 <aop-project name="IOC-Proj86-SpringBoot-LayeredApp"/>
 <aop-project name="IOC-Proj69-Anno-LayeredApplication-Student-RealTimeDI"/>
 <aop-project name="DAO-Proj07-SpringBoot-Profiles-yml"/>
+<aop-project name="AOP-Proj02-Spring-AOP-Declarative-AroundAdvice-ProxyInterfaces"/>
 <aop-project name="IOC-Proj77-Anno-LayeredApplication-NestedBeanFactory-UsingAnnoResource,Named-AC"/>
 <aop-project name="IOC-Proj55-FactoryBean-IPLScoreUseCase"/>
 <aop-project name="IOC-Proj81-100p-StrategyDP-Spring"/>
