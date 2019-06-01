@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+	<!-- <bean id="IntrAmt" class="com.nt.beans.IntrAmtDetails">
+		<property name="principle" value="20000"/>
+		<property name="rate" value="2.0f"/>
+		<property name="time" value="2"/>		
+	</bean> -->
+	
+	<bean id="bankAcc" class="com.nt.beans.BankAccount">
+		<constructor-arg value="10000,12,2"/>
+	</bean>
+	
+	<bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+		<property name="customEditors">
+			<map>
+				<entry key="com.nt.beans.IntrAmtDetails" value="com.nt.editors.IntrAmtDetailsEditor"/>
+			</map>
+		</property>
+	</bean>
+
+</beans>

@@ -1,0 +1,17 @@
+create or replace function fx_getEmpsByDesg(desg in varchar2)
+return sys_refcursor
+as
+details sys_refcursor;
+begin
+  open details for select eno,ename,job,sal from employee where job=desg;
+  return details; 
+end;
+/
+
+create or replace procedure p_getEmpsByDesg(desg in varchar2,
+                                            details out sys_refcursor)
+as
+begin
+  open details for select eno,ename,job,sal from employee where job=desg; 
+end;
+/

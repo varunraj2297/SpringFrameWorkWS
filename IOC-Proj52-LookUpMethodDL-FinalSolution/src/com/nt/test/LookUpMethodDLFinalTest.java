@@ -28,11 +28,6 @@ public class LookUpMethodDLFinalTest {
 
 }
 
-	/*limits:-
-	 1)even though scope of dependent is prototype since it is dependent to singleton bean 
-	 	only one time the dependent class obj can be injected to target and hence dependent start behaving 
-	 	like singleton i.e even though we send multiple request it useless becoz to singleton scope we can '
-	 	inject only one time
-	 */
+
 	
 	

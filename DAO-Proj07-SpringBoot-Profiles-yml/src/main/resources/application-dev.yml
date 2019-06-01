@@ -1,0 +1,7 @@
+spring:
+   datasource: 
+       type: org.apache.commons.dbcp2.BasicDataSource
+       driver-class-name: com.mysql.cj.jdbc.Driver
+       url: jdbc:mysql:///varun
+       username: root
+       password: Raj*2297

@@ -12,10 +12,15 @@ public class Bike {
 	private String idleSpeed;
 	private String tankCapacity;
 	
+
+	public Bike(String idleSpeed, String tankCapacity) {
+		this.idleSpeed = idleSpeed;
+		this.tankCapacity = tankCapacity;
+	}
+
 	
 	public Bike(String regno, String ownerName, long engineNo, String colour, String engineCC, String idleMilege,
 			String idleSpeed, String tankCapacity) {
-		super();
 		this.regno = regno;
 		this.ownerName = ownerName;
 		this.engineNo = engineNo;

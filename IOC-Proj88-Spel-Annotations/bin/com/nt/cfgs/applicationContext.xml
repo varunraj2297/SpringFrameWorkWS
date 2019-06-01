@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+
+  <!--  <bean id="si" class="com.nt.beans.SportsInfo">
+       <property name="sportNames">
+           <list>
+              <value>Cricket</value>
+              <value>Soccer</value>
+              <value>Tennis</value>
+              <value>Golf</value>
+              <value>Swimming</value>
+              <value>Bad miton</value>
+           </list>
+       </property>
+       
+       <property name="trainingPeriods">
+            <map>
+                <entry key="Cricket" value="5"/>
+                <entry key="Soccer" value="6"/>
+                <entry key="Tennis" value="4"/>
+                <entry key="Golf" value="3"/>
+                <entry key="Swimming" value="2"/>
+                <entry key="Bad miton" value="2"/>
+            </map>
+       </property>
+       
+       <property name="trainers">
+          <list>
+              <value>Ronaldo</value>
+              <value>Messi</value>
+              <value>Sachin</value>
+              <value>Sehwag</value>
+              <value>PV Sindu</value>
+              <value>Saina mrizza</value>
+              <value>Michael Phelps</value>
+              <value>Tiger Woods</value>
+          </list>
+       </property>
+       
+       <property name="sportfees">
+      		 <map>
+                <entry key="Cricket" value="1500000"/>
+                <entry key="Soccer" value="2000000"/>
+                <entry key="Tennis" value="500000"/>
+                <entry key="Golf" value="1000000"/>
+                <entry key="Swimming" value="1500000"/>
+                <entry key="Bad minton" value="2000000"/>
+            </map>
+       </property>
+             
+   </bean>
+   
+   <bean id='pi' class="com.nt.beans.PlayerInfo">
+       <property name="playerNum" value="#{ T(java.lang.Math).random()*100}"/>  
+       
+       <property name="playerName" value="Sistla Srinivas"/>
+       
+       <property name="age" value="22"/>
+       
+       <property name="selectedSports">
+         <list>
+            <value>#{si.sportNames[5]}</value>
+         </list>
+       </property>
+       
+       <property name="selectedSportsTraningPeriods">
+        <list>
+          <value>#{si.trainingPeriods['Bad miton']}</value>
+        </list>
+       </property>
+       
+       <property name="availedTrainers" value="#{si.trainers[4]}"/>
+       
+       <property name="totalTimePeriod" value="#{si.trainingPeriods['Bad miton']}"/>
+
+       <property name="totalFees" value="#{si.sportfees['Bad minton']}"/>             
+   </bean> -->
+   
+   <context:component-scan base-package="com.nt.beans"/>
+</beans>

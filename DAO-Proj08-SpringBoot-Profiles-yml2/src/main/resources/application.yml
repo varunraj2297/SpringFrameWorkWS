@@ -1,0 +1,39 @@
+spring:
+   application:
+      name: dev
+   datasource: 
+       type: org.apache.commons.dbcp2.BasicDataSource
+       driver-class-name: com.mysql.cj.jdbc.Driver
+       url: jdbc:mysql:///varun
+       username: root
+       password: Raj*2297
+       
+---
+
+spring: 
+    application:
+       name: prod
+    datasource: 
+       driver-class-name: oracle.jdbc.driver.OracleDriver
+       url: jdbc:oracle:thin:@localhost:1521:xe
+       username: hr
+       password: hr
+       
+---
+
+spring: 
+    application:
+      name: uat  
+    datasource: 
+       type: org.apache.tomcat.dbcp.dbcp2.BasicDataSource
+       driver-class-name: oracle.jdbc.driver.OracleDriver
+       url: jdbc:oracle:thin:@localhost:1521:xe
+       username: hr
+       password: hr
+
+---
+spring: 
+   profiles: 
+       active: uat
+
+       

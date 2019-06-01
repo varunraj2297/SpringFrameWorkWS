@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+	<bean id="aCard" class="com.nt.beans.AadharCard">
+		<property name="name" value="Srinivas"/>	
+		<property name="UID" value="6321566981"/>
+		<property name="dob" value="5/1/1996"/>
+		<property name="gender" value="M"/>
+		<property name="photo" value="c:/image.jpg"/>
+		<property name="age" value="22.11f"/>
+		<property name="currencyCode" value="INR"/>
+		<property name="locale" value="hi_IN"/>
+		<property name="mobileNos" value="9654712364,8963255666"/>
+		<property name="handicapped" value="false"/>
+		<property name="favLetters" value="SRINU"/>
+		<property name="reader" value="classpath:com/nt/cfgs/applicationContext.xml"/>
+		<property name="pattern" value="Pattern.matches('.s','as')"/>
+		<property name="linkedInURL" value="http://linkedin.com/id=3245"/>
+		<property name="linkedInURI" value="linkedin.com/id=235"/>		
+		<property name="curClass" value="com.nt.beans.AadharCard"/>
+	</bean>
+
+</beans>

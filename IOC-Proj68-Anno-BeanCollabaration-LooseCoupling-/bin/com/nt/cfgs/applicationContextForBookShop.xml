@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Target Class -->
+	<bean id="bksp" class="com.nt.beans.BookShop">
+	<constructor-arg name="materialSupplier" ref="dp"/>
+	</bean>
+	
+	<!-- Dependent Classes -->
+	<bean id="np" class="com.nt.beans.NareshPublications"/>
+	<bean id="dp" class="com.nt.beans.DurgaPublications"/>
+</beans>
