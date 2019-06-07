@@ -5,7 +5,7 @@
 
 
     <bean id="collegeService" class="com.nt.service.CollegeService"/>
-    
+   
     <bean id="pmadvice" class="com.nt.advice.PerformanceMonitoringAdvice"/>
     <bean id="logadvice" class="com.nt.advice.LoggingAdvice"/>
     <bean id="cacheadvice" class="com.nt.advice.CacheAroundAdvice"/>

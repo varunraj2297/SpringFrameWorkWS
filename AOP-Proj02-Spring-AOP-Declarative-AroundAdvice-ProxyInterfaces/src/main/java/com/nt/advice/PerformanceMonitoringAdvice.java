@@ -5,7 +5,7 @@ import org.aopalliance.intercept.MethodInvocation;
 
 public class PerformanceMonitoringAdvice implements MethodInterceptor {
 
-	private long start,end;
+	private double start,end;
 	@Override
 	public Object invoke(MethodInvocation invocation) throws Throwable {
 		Object retVal=null;

@@ -1,0 +1,11 @@
+SQL> desc bankaccount;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ACNO                                      NOT NULL NUMBER(10)
+ HOLDERNAME                                         VARCHAR2(10)
+ ADDRS                                              VARCHAR2(10)
+ BALANCE                                            NUMBER(12,2)
+       
+SQL> create table userlist(username varchar2(20),password varchar2(20));
+
+Table created.       
