@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="com.nt.dao.EmployeeDAO"/>
-<fullyQualifiedTypeName name="javax.transaction.Transactional"/>
-<fullyQualifiedTypeName name="org.springframework.transaction.annotation.Propagation"/>
-<fullyQualifiedTypeName name="org.springframework.orm.hibernate5.HibernateCallback"/>
-<fullyQualifiedTypeName name="org.hibernate.Transaction"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
-<fullyQualifiedTypeName name="org.hibernate.query.Query"/>
-<fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
-<fullyQualifiedTypeName name="org.hibernate.HibernateException"/>
-<fullyQualifiedTypeName name="org.springframework.orm.hibernate5.LocalSessionFactoryBean"/>
-<fullyQualifiedTypeName name="com.nt.entity.EmployeeHLO"/>
-<fullyQualifiedTypeName name="java.util.Properties"/>
 <fullyQualifiedTypeName name="org.springframework.orm.hibernate5.HibernateTemplate"/>
 <fullyQualifiedTypeName name="org.hibernate.SessionFactory"/>
 <fullyQualifiedTypeName name="org.springframework.orm.hibernate5.HibernateTransactionManager"/>
@@ -23,7 +10,6 @@
 <fullyQualifiedTypeName name="com.nt.dto.EmployeeDTO"/>
 <fullyQualifiedTypeName name="lombok.Data"/>
 <fullyQualifiedTypeName name="java.io.Serializable"/>
-<fullyQualifiedTypeName name="java.lang.Float"/>
 <fullyQualifiedTypeName name="com.nt.dao.BankDAO"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="com.nt.dao.AuthDAO"/>
@@ -31,7 +17,6 @@
 <fullyQualifiedTypeName name="com.nt.dto.UserListDTO"/>
 <fullyQualifiedTypeName name="com.nt.bo.UserListBO"/>
 <fullyQualifiedTypeName name="org.springframework.beans.BeanUtils"/>
-<fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
 <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
 <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
 <fullyQualifiedTypeName name="com.nt.manager.AuthentiationManager"/>
@@ -56,8 +41,23 @@
 <fullyQualifiedTypeName name="org.springframework.boot.SpringApplication"/>
 <fullyQualifiedTypeName name="com.nt.test.BeforeAdviceTest"/>
 <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
-<fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="com.nt.service.BankService"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="org.springframework.aop.framework.ProxyFactoryBean"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="java.io.FileWriter"/>
+<fullyQualifiedTypeName name="com.nt.service.OnlineStore"/>
+<fullyQualifiedTypeName name="java.lang.Float"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="com.nt.service.IdGenerator"/>
+<fullyQualifiedTypeName name="org.springframework.aop.ThrowsAdvice"/>
+<fullyQualifiedTypeName name="org.springframework.aop.aspectj.AspectJAfterThrowingAdvice"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Method"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="com.nt.service.BillAmountCalculator"/>
+<fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+<fullyQualifiedTypeName name="com.nt.exception.SomeException"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
 </qualifiedTypeNameHistroy>

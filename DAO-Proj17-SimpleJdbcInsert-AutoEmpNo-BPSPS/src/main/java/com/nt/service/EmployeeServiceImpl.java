@@ -19,12 +19,24 @@ public class EmployeeServiceImpl implements EmployeeService{
 	private EmployeeDAO dao;
 
 	@Override
-	public String register(EmployeeDTO dto) {
+	public String register1(EmployeeDTO dto) {
 		
 		int result=0;
 		EmployeeBO bo=new EmployeeBO();
 		BeanUtils.copyProperties(dto,bo);
-		result=dao.insert(bo);
+		result=dao.insert1(bo);
+         
+		return result==0?"failed":"success";
+
+	}
+	
+	@Override
+	public String register2(EmployeeDTO dto) {
+		
+		int result=0;
+		EmployeeBO bo=new EmployeeBO();
+		BeanUtils.copyProperties(dto,bo);
+		result=dao.insert2(bo);
          
 		return result==0?"failed":"success";
 

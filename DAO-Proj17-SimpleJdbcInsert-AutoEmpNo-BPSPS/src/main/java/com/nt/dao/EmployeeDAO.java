@@ -3,5 +3,6 @@ package com.nt.dao;
 import com.nt.bo.EmployeeBO;
 
 public interface EmployeeDAO {
-    public int insert(EmployeeBO bo);
+    public int insert1(EmployeeBO bo);
+    public int insert2(EmployeeBO bo);
 }

@@ -31,11 +31,13 @@
 <aop-project name="IOC-Proj29-BasicSetterInjection-BeanScopes"/>
 <aop-project name="IOC-Proj58-0-BeanPostProcessor-POC"/>
 <aop-project name="IOC-Proj39-BankProj-LayeredApplication-NestedBeanFactory-UsingProperties-AC"/>
+<aop-project name="AOP-Proj09-Spring-AOP-Declarative-AfterAdvice-IdValidate"/>
 <aop-project name="IOC-Proj54-FactoryBean"/>
 <aop-project name="DAO-Proj15-SpringBoot-NamedParameters"/>
 <aop-project name="IOC-Proj57-InstanceFactoryMethod-IPLScoreUseCase"/>
 <aop-project name="IOC-Proj22-BeanInheritance-UsingConstructorInjection"/>
 <aop-project name="IOC-Proj63-PropertyEditors-BeanFactory"/>
+<aop-project name="AOP-Proj08-Spring-AOP-Declarative-AfterAdvice"/>
 <aop-project name="IOC-Proj65-Anno-Required"/>
 <aop-project name="DAO-Proj13-BatchProcessing"/>
 <aop-project name="IOC-Proj26-DependencyLookup"/>
@@ -71,6 +73,7 @@
 <aop-project name="IOC-Proj44-UtilNameSpace"/>
 <aop-project name="IOC-Proj38-LayeredApplication-Student-RealTimeDI-UsingPropertyFile"/>
 <aop-project name="IOC-Proj45-BeanLifeCycle-Declaratice Approach"/>
+<aop-project name="AOP-Proj11-Spring-AOP-Declarative-ThrowsAdvice-ExceptionGrapher"/>
 <aop-project name="IOC-Proj59-BeanPostProcessor-LMI-UseCase-BeanFactory"/>
 <aop-project name="IOC-Proj14-CyclicDependenyManagement-Solution1-POC"/>
 <aop-project name="IOC-Proj67-Anno-Sterotypes"/>
@@ -101,6 +104,7 @@
 <aop-project name="IOC-Proj26-DependencyLookup using static variable"/>
 <aop-project name="IOC-Proj83-100p-Spring-I18n"/>
 <aop-project name="IOC-Proj43-Spring-I18n-EventHandling"/>
+<aop-project name="AOP-Proj10-Spring-AOP-Declarative-ThrowsAdvice-POC"/>
 <aop-project name="IOC-Proj85-SpringBoot-Basics2"/>
 <aop-project name="DAO-Proj19-SpringBoot-SimpleJdbcInsert-AutoEmpNo-BPSPS"/>
 <aop-project name="IOC-Proj23-LayeredApplication-Student-RealTimeDI-WithBeanInheritance"/>

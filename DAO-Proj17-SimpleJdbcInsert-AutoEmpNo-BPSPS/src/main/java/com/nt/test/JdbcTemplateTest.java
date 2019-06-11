@@ -38,7 +38,20 @@ public class JdbcTemplateTest {
 	  ctx=new ClassPathXmlApplicationContext("com/nt/cfgs/applicationContext.xml");
       service=ctx.getBean("service",EmployeeService.class);
       try {
-        System.out.println(service.register(dto));
+			System.out.println(service.register2(dto));
+			
+			System.out.println("Enter Employee Name::");
+			ename=sc.next();
+			System.out.println("Enter Job::");
+			job=sc.next();
+			System.out.println("Enter Sal::");
+			sal=sc.nextInt();
+			
+			  
+			dto.setEname(ename);
+			dto.setJob(job);
+			dto.setSal(sal);
+			System.out.println(service.register1(dto));
       }
       catch (DataAccessException dase) {
 		dase.printStackTrace();

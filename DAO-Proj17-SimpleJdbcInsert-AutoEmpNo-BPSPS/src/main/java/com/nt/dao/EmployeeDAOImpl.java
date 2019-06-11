@@ -1,5 +1,8 @@
 package com.nt.dao;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
@@ -22,9 +25,24 @@ public class EmployeeDAOImpl implements EmployeeDAO {
         count=template.queryForObject(GET_EMPNO, Integer.class);
     	return count;
     }
+    
+    @Override
+	public int insert1(EmployeeBO bo) {
+		int count=0;
+		Map<String,Object> map=null;
+		map=new HashMap<String,Object>();
+		map.put("EMPNO", bo.getEmpNo());
+		map.put("ENAME", bo.getEname());
+		map.put("JOB", bo.getJob());
+		map.put("SAL",bo.getSal());
+		
+		//sji.setTableName("EMP1");
+		count=sji.execute(map);
+		return count;
+	}
 
 	@Override
-	public int insert(EmployeeBO bo) {
+	public int insert2(EmployeeBO bo) {
 		int count=0;
 		BeanPropertySqlParameterSource bpsps=null;
 		
