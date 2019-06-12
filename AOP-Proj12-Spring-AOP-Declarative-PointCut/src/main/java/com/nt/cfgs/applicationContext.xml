@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+
+    <bean id="bankService" class="com.nt.service.BankService"/>
+   
+    <bean id="pmadvice" class="com.nt.advice.PerformanceMonitoringAdvice"/>
+
+  <!--   <bean id="bpointCut" class="com.nt.pointcut.BankPointCut"/> -->
+      
+    <!-- <bean id="bpointCut" class="org.springframework.aop.support.NameMatchMethodPointcut">
+       <property name="mappedName" value="transferMoney"/>
+        <property name="mappedNames" value="transferMoney,withdraw"/>
+    </bean> -->
+    
+    <!-- <bean id="pmadvisor" class="org.springframework.aop.support.DefaultPointcutAdvisor">
+        <property name="advice" value="#{pmadvice}"/>
+        <property name="pointcut" value="#{bpointCut}"/>  
+    </bean>  -->
+    
+    <bean id="pmadvisor" class="org.springframework.aop.support.NameMatchMethodPointcutAdvisor">
+        <property name="advice" value="#{pmadvice}"/>
+        <property name="mappedNames" value="deposite,withdraw"/>  
+    </bean>
+    <bean id="pfb" class="org.springframework.aop.framework.ProxyFactoryBean">
+       <property name="target" value="#{bankService}"/>
+       <property name="interceptorNames" value="pmadvisor"/>  <!-- if more advice/advisors are there use (,) to seperate *it is applicable for only array type-->
+    </bean>
+</beans>

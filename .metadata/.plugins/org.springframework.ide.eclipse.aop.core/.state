@@ -2,8 +2,8 @@
 <aop-reference-model>
 <aop-project name="SpringData-Proj02-JPA-SpringBoot-PagingAndSorting"/>
 <aop-project name="AOP-Proj03-Spring-AOP-Declarative-BeforeAdvice"/>
-<aop-project name="IOC-Proj79-Anno-BeanLifeCycle-Declaratice Approach-atPostConstructandatPreDestroy"/>
 <aop-project name="IOC-Proj72-Anno-Propertiesfile"/>
+<aop-project name="IOC-Proj79-Anno-BeanLifeCycle-Declaratice Approach-atPostConstructandatPreDestroy"/>
 <aop-project name="IOC-Proj69-Anno-LayeredApplication-Student-RealTimeDI-UsingPropertyFile"/>
 <aop-project name="IOC-Proj34-BankProj-LayeredApplication-NestedBeanFactory"/>
 <aop-project name="AOP-Proj04-Spring-AOP-Declarative-Security-BeforeAdvice"/>
@@ -26,8 +26,8 @@
 <aop-project name="DAO-Proj17-SimpleJdbcInsert-AutoEmpNo-BPSPS"/>
 <aop-project name="SpringData-Proj03-SpringBoot-BasicCurdOperations-NoSql-MongoDb"/>
 <aop-project name="IOC-Proj82-100p-MethodInjectionOrMethodReplacer"/>
-<aop-project name="IOC-Proj31-DependencyCheck"/>
 <aop-project name="IOC-Proj21-BeanInheritance-UsingSetterInjection"/>
+<aop-project name="IOC-Proj31-DependencyCheck"/>
 <aop-project name="IOC-Proj29-BasicSetterInjection-BeanScopes"/>
 <aop-project name="IOC-Proj58-0-BeanPostProcessor-POC"/>
 <aop-project name="IOC-Proj39-BankProj-LayeredApplication-NestedBeanFactory-UsingProperties-AC"/>
@@ -115,6 +115,7 @@
 <aop-project name="IOC-Proj66-Anno-Autowired"/>
 <aop-project name="IOC-Proj48-AwareInjection"/>
 <aop-project name="IOC-Proj30-AutoWiring"/>
+<aop-project name="AOP-Proj12-Spring-AOP-Declarative-PointCut"/>
 <aop-project name="IOC-Proj32-LayeredApplication-NestedBeanFactory"/>
 <aop-project name="IOC-Proj78-Anno-LayeredApplication-NestedBeanFactory-UsingAnnoResource,Named-AC-setParent(-)"/>
 <aop-project name="IOC-Proj87-Spel"/>
