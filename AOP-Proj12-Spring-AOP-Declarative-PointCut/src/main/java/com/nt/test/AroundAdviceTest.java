@@ -17,7 +17,7 @@ public class AroundAdviceTest {
 			bProxy = ctx.getBean("pfb", BankService.class);
 		    System.out.println(bProxy.withdraw(200,1000.0f));
 		    System.out.println(bProxy.deposite(500,5000.0f));
-		    System.out.println(bProxy.transferMoney(500, 200,3000.0f));
+		    System.out.println(bProxy.transferMoney(500, 200,5000.0f));
 		}
 		catch (IllegalArgumentException iae) {
 			iae.printStackTrace();

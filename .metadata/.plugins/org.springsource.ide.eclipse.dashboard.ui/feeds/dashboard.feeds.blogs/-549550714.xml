@@ -5,7 +5,62 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2019-06-10T23:21:46Z</updated>
+  <updated>2019-06-12T20:45:05Z</updated>
+  <entry>
+    <title>Spring Tips: Spring's Support for Kotlin Coroutines</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/06/12/spring-tips-spring-s-support-for-kotlin-coroutines" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2019-06-12:3709</id>
+    <updated>2019-06-12T20:45:05Z</updated>
+    <content type="html">&lt;p&gt;Hi Spring fans! In this week&amp;rsquo;s installment Josh Long (@starbuxman) looks at Kotlin&amp;rsquo;s new support for coroutines (&amp;ldquo;Koroutines&amp;rdquo;?) and the rich integrations in Spring.&lt;/p&gt;
+&lt;p&gt;speaker: &lt;a href="http://twitter.com/Starbuxman"&gt;Josh Long (@starbuxman) &lt;/a&gt;&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/3xu5xttCrVk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Java CFEnv 1.1.0.RC1 Released</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/06/12/java-cfenv-1-1-0-rc1-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Mark Pollack</name>
+    </author>
+    <id>tag:spring.io,2019-06-12:3708</id>
+    <updated>2019-06-12T15:58:00Z</updated>
+    <content type="html">&lt;div class="sect1"&gt;
+&lt;h2 id="introduction"&gt;&lt;a class="anchor" href="#introduction"&gt;&lt;/a&gt;Introduction&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;On behalf of the community I am happy to announce the release of Java CFEnv 1.1 RC1.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The RC1 release adds the following functionality:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Checks the classpath to correctly determine setting of MySQL or MariaDB driver class name.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When using the Boot support, an exception is thrown if the Spring Cloud Connector library is on the classpath when .  This applies only for the following services: DataSource, RabbitMQ, Cassandra, MongoDB, and Redis.  The exception message indicates to set the environment variable &lt;code&gt;JBP_CONFIG_SPRING_AUTO_RECONFIGURATION '{enabled: false}'&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Support for Boot 1.5.x by copying a logging utility class into the project.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The project &lt;a href="https://github.com/pivotal-cf/java-cfenv/blob/master/README.adoc"&gt;README&lt;/a&gt; has more information.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The GA release is planned for next week. Please try it out and give feedback on our &lt;a href="https://github.com/pivotal-cf/java-cfenv/issues"&gt;github issues&lt;/a&gt; page.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>This Week in Spring - June 11th, 2019</title>
     <link rel="alternate" href="https://spring.io/blog/2019/06/10/this-week-in-spring-june-11th-2019" />
@@ -878,71 +933,6 @@ dependencies {&#xD;
     <content type="html">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/9henAE6VUbk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;Hi Spring fans! In this installment &lt;a href="http://twitter.com/Starbuxman"&gt;Josh Long (@starbuxman)&lt;/a&gt; looks at the just-announced support for reactive transactions, now supported in both &lt;a href="https://r2dbc.io/"&gt;R2DBC&lt;/a&gt; and Spring Data MongoDB. &lt;/p&gt;
 &lt;p&gt;speaker: Josh Long&lt;br/&gt;twitter: @starbuxman&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Cloud Data Flow 2.1 GA Released</title>
-    <link rel="alternate" href="https://spring.io/blog/2019/05/21/spring-cloud-data-flow-2-1-ga-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Mark Pollack</name>
-    </author>
-    <id>tag:spring.io,2019-05-20:3686</id>
-    <updated>2019-05-21T14:40:59Z</updated>
-    <content type="html">&lt;p&gt;The Spring Cloud Data Flow team is pleased to announce the release of 2.1 of Data Flow.&lt;/p&gt;
-&lt;p&gt;We have a brand new website with great new content, which is where you can find our &lt;a href="https://dataflow.spring.io/getting-started/"&gt;getting started guide&lt;/a&gt; for use on Cloud Foundry and Kubernetes and your Local Machine.&lt;/p&gt;
-&lt;p&gt;Here are the highlights:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;New Dedicated Data Flow Website&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;The Data Flow team takes pride is openly communicating with the community in various forums including StackOverflow, Gitter, GitHub, Twitter, and at times in Email and Zoom calls even.&lt;/p&gt;
-&lt;p&gt;However, we realized that we could provide a much better experience to answer common questions and provide an easier on-ramp to using Data Flow if we focused on improving the online documentation. The reference guide was not the ideal format to achieve that goal, so we embarked on creating a new website - &lt;a href="https://dataflow.spring.io"&gt;https://dataflow.spring.io&lt;/a&gt; - that acts as the hub for learning about all things Data Flow related.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://github.com/spring-cloud/spring-cloud-dataflow/raw/master/spring-cloud-dataflow-docs/src/main/asciidoc/images/new-web-site.png" alt="scdf-new-website" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Helm Chart Updates&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;With continued interest from the community, we have now added support to toggle between RabbitMQ and Apache Kafka when using Data Flow&amp;rsquo;s &lt;a href="https://hub.kubeapps.com/charts/stable/spring-cloud-data-flow"&gt;Helm Chart&lt;/a&gt;. The &lt;a href="https://dataflow.spring.io/docs/installation/kubernetes/helm/"&gt;installation instructions for Kubernetes&lt;/a&gt; is the best place to get started using the Chart. &lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Concurrent Launch Throttling for Tasks&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;With the recent feedback from the community concerning the concurrent task launching algorithm, we have redesigned the approach to decide whether or not Tasks are currently running, and if running, how many are concurrently in running state. A more realistic view of what’s actually happening with Tasks is now possible by querying against the runtime status of the Tasks in the underlying platforms (e.g., Local, Cloud Foundry and Kubernetes). You can read all about the new design and the corner cases from the &lt;a href="http://docs.spring.io/spring-cloud-dataflow/docs/2.1.0.RELEASE/reference/htmlsingle/#spring-cloud-dataflow-task-limit-concurrent-executions"&gt;reference guide&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Deployer Properties as Dropdown&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;A growing number of support cases indicated that it is hard for the developers to discover and then supply the platform-specific deployer properties when deploying streams and tasks. We are fixing that by adding a new dropdown with deployer properties automatically populated based on the platform where Data Flow is configured to run. The same also will apply for scenarios when there are 1 or more target platforms configured, the dropdown updates to reflect the target platform. We have implemented this for Stream deployments and in the next version will include support for Tasks.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://user-images.githubusercontent.com/50398/56348316-137ab480-61be-11e9-9f92-6607b7ec6fc6.png" alt="scdf-local-deployment-properties-1" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Switched to ZenHub&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;From a product backlog perspective, we have switched and migrated all the GitHub backlog from Waffle to ZenHub (see: &lt;a href="https://waffle.io/"&gt;reasons&lt;/a&gt;). If you’re interested in following along the product release progress, you could install the ZenHub plugin for the web browser and navigate to ZenHub tab in the Data Flow GitHub repository. &lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Stay in touch&lt;/strong&gt;?&lt;/p&gt;
-&lt;p&gt;As always, we welcome feedback and contributions, so please reach out to us on &lt;a href="https://stackoverflow.com/questions/tagged/spring-cloud-dataflow"&gt;StackOverflow&lt;/a&gt; or &lt;a href="https://github.com/spring-cloud/spring-cloud-dataflow"&gt;GitHub&lt;/a&gt; or via &lt;a href="https://gitter.im/spring-cloud/spring-cloud-dataflow"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>This Week in Spring - May 21, 2019</title>
-    <link rel="alternate" href="https://spring.io/blog/2019/05/21/this-week-in-spring-may-21-2019" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2019-05-21:3688</id>
-    <updated>2019-05-21T12:39:02Z</updated>
-    <content type="html">&lt;p&gt;Hi Spring fans! It&amp;rsquo;s been quite a crazy week! I was in Spring I/O last week in Barcelona, Spain and there was a deluge of interesting news to come out of the show! I loved the show - a sort of mini SpringOne - and am chomping at the bit to see what comes next. I&amp;rsquo;m now beginning a small tour starting in Zurich, Switzerland; then I&amp;rsquo;m off to the paradise-like Paris, France for the epic SpringOne Tour event there, then I&amp;rsquo;m off to Minsk, Belarus; then off to Barcelona, Spain for JBCN, and then - finally - home for the middle school graduation of my kid at the end of the month. So much exciting stuff culminating in an even more exciting event, I can hardly stand it! &lt;/p&gt;
-&lt;p&gt;Anyway, we&amp;rsquo;ve got tons to get to today, so, let&amp;rsquo;s!&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;I love Ben Wilcock&amp;rsquo;s look at the 5th anniversary of PCF, &lt;a href="https://spring.io/blog/2019/05/21/pivotal-cloud-foundry-is-5-years-old-here-s-how-it-changed-my-life"&gt;&lt;em&gt;Pivotal Cloud Foundry is 5 years old, here’s how it changed my life&amp;hellip;&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/05/17/a-bootiful-podcast-community-member-nicolas-frankel-on-testing-security-and-more"&gt;A Bootiful Podcast: Community Member Nicolas Frankel on Testing, Security, and More&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/05/16/reactive-transactions-with-spring"&gt;Reactive Transactions with Spring&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/05/15/reactor-dysprosium-m1-is-available-now"&gt;Reactor Dysprosium-M1 is Available Now&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/05/15/spring-data-r2dbc-1-0-m2-and-spring-boot-starter-released"&gt;Spring Data R2DBC 1.0 M2 and Spring Boot starter released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/05/15/spring-boot-2-1-5-released"&gt;Spring Boot 2.1.5 released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/05/15/spring-boot-2-2-m3-available-now"&gt;Spring Boot 2.2 M3 available now&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Last week I looked at using Kafka from your Spring Batch ETL flow in this Spring Tips, &lt;a href="https://spring.io/blog/2019/05/15/spring-tips-spring-batch-and-apache-kafka"&gt;&lt;em&gt;Spring Tips: Spring Batch and Apache Kafka&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Spring Integration lead Gary P. Russell has a &lt;a href="https://twitter.com/springcentral/status/1130798541356638208"&gt; wonderful post on Spring for Apache Kafka&lt;/a&gt; over on the Confleunt blog&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://twitter.com/making/status/1130694508935491584?s=12"&gt;twitter.com&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;I love the new &amp;ldquo;Push to Pivotal WS&amp;rdquo; button on the various &lt;a href="http://Spring.io/guides"&gt;Spring guides&lt;/a&gt;. Check out this one - &lt;a href="https://spring.io/guides/gs/rest-service/"&gt;Building a RESTful Web Service&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;Have you tried Armeria? It&amp;rsquo;s an interesting project from Netty-creator Trustin Lee. &lt;a href="https://line.github.io/armeria/"&gt;It has integrations for Spring&lt;/a&gt; and it looks kind of interesting.&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://twitter.com/rbrtwnklr/status/1129658828226748417"&gt;Lots of interesting notes by Robert Winkler on the new release of Resilience4J&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://twitter.com/snicoll/status/1128939783512887296"&gt;Did you see that we announced support for Kotlin-based configuration for Gradle?&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://speakerdeck.com/meistermeier/what-the-graph?slide=40"&gt;Take a look at the new, reactive Spring Data Neo4j&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Interesting talk from Andreas Evers on using [Spinnaker for cutting-edge continuous delivery(&lt;a href="https://twitter.com/springcloud/status/1129081211710787589"&gt;https://twitter.com/springcloud/status/1129081211710787589&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://github.com/spring-projects/spring-framework/wiki/GraalVM-native-image-support"&gt;Have you seen our GraalVM native image page&lt;/a&gt;?&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://twitter.com/springcentral/status/1129056694686892032"&gt;This is pretty interesting: Spring Cloud Sleuth is used by Netflix&lt;/a&gt;!&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://twitter.com/bclozel/status/1128941501218791425"&gt;Want a quick review of the Kotlin related announcements from Spring IO?&lt;/a&gt; Check out this thread.&lt;/li&gt;
-  &lt;li&gt;Exciting news! &lt;a href="https://twitter.com/springcentral/status/1128898643686232064"&gt;Spring Boot Maven downloads have more than doubled&lt;/a&gt; in the past year, and are up 23% in just the past 3 months. Given that we&amp;rsquo;re talking about tens of millions of downlaods heere, those are some impressive numbers!&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://twitter.com/springcentral/status/1128898695859232768"&gt;And of course there&amp;rsquo;s a 138% increase over the last year in Spring Cloud downloads!&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>

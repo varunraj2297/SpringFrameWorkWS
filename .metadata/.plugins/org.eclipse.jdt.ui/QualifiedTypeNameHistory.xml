@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.hibernate.SessionFactory"/>
 <fullyQualifiedTypeName name="org.springframework.orm.hibernate5.HibernateTransactionManager"/>
 <fullyQualifiedTypeName name="com.nt.service.EmployeeService"/>
 <fullyQualifiedTypeName name="java.lang.Class"/>
@@ -45,7 +44,6 @@
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
 <fullyQualifiedTypeName name="java.io.FileWriter"/>
 <fullyQualifiedTypeName name="com.nt.service.OnlineStore"/>
-<fullyQualifiedTypeName name="java.lang.Float"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="com.nt.service.IdGenerator"/>
@@ -58,6 +56,8 @@
 <fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="com.nt.service.BankService"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="org.springframework.aop.support.DynamicMethodMatcherPointcut"/>
+<fullyQualifiedTypeName name="com.nt.service.BankService"/>
+<fullyQualifiedTypeName name="java.lang.Float"/>
 </qualifiedTypeNameHistroy>

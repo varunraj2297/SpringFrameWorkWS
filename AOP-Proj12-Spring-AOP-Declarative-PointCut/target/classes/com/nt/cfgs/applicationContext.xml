@@ -20,10 +20,19 @@
         <property name="pointcut" value="#{bpointCut}"/>  
     </bean>  -->
     
-    <bean id="pmadvisor" class="org.springframework.aop.support.NameMatchMethodPointcutAdvisor">
+   <!--  <bean id="pmadvisor" class="org.springframework.aop.support.NameMatchMethodPointcutAdvisor">
         <property name="advice" value="#{pmadvice}"/>
         <property name="mappedNames" value="deposite,withdraw"/>  
+    </bean> -->
+    
+    
+    <bean id="dynabpointCut" class="com.nt.pointcut.DynaBankPointCut"/> 
+    
+     <bean id="pmadvisor" class="org.springframework.aop.support.DefaultPointcutAdvisor">
+        <property name="advice" value="#{pmadvice}"/>
+        <property name="pointcut" value="#{dynabpointCut}"/>  
     </bean>
+    
     <bean id="pfb" class="org.springframework.aop.framework.ProxyFactoryBean">
        <property name="target" value="#{bankService}"/>
        <property name="interceptorNames" value="pmadvisor"/>  <!-- if more advice/advisors are there use (,) to seperate *it is applicable for only array type-->

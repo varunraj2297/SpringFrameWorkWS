@@ -175,9 +175,11 @@
           <tags>persp.viewSC:org.eclipse.ant.ui.views.AntView</tags>
           <tags>persp.viewSC:org.eclipse.datatools.sqltools.result.resultView</tags>
           <tags>persp.perspSC:org.eclipse.datatools.sqltools.sqleditor.perspectives.EditorPerspective</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_HL20P4QtEemTPe1F-QBjjA" selectedElement="_HL20R4QtEemTPe1F-QBjjA" horizontal="true">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_HL20P4QtEemTPe1F-QBjjA" selectedElement="_HL20QIQtEemTPe1F-QBjjA" horizontal="true">
             <children xsi:type="basic:PartStack" xmi:id="_HL20QIQtEemTPe1F-QBjjA" elementId="org.eclipse.debug.internal.ui.NavigatorFolderView" containerData="3549" selectedElement="_HL20QoQtEemTPe1F-QBjjA">
               <tags>org.eclipse.e4.primaryNavigationStack</tags>
+              <tags>MinimizedByZoom</tags>
+              <tags>active</tags>
               <children xsi:type="advanced:Placeholder" xmi:id="_HL20QYQtEemTPe1F-QBjjA" elementId="org.eclipse.debug.ui.DebugView" ref="_HL__CIQtEemTPe1F-QBjjA" closeable="true">
                 <tags>View</tags>
                 <tags>categoryTag:Debug</tags>
@@ -245,8 +247,12 @@
                   </children>
                 </children>
                 <children xsi:type="basic:PartSashContainer" xmi:id="_HL20U4QtEemTPe1F-QBjjA" containerData="5000" selectedElement="_HL20VIQtEemTPe1F-QBjjA">
-                  <children xsi:type="advanced:Placeholder" xmi:id="_HL20VIQtEemTPe1F-QBjjA" elementId="org.eclipse.ui.editorss" containerData="6411" ref="_HL_-N4QtEemTPe1F-QBjjA"/>
-                  <children xsi:type="basic:PartStack" xmi:id="_HL20VYQtEemTPe1F-QBjjA" elementId="PartStack@6b875736" containerData="3589" selectedElement="_HL20VoQtEemTPe1F-QBjjA">
+                  <children xsi:type="advanced:Placeholder" xmi:id="_HL20VIQtEemTPe1F-QBjjA" elementId="org.eclipse.ui.editorss" containerData="6411" ref="_HL_-N4QtEemTPe1F-QBjjA">
+                    <tags>Maximized</tags>
+                  </children>
+                  <children xsi:type="basic:PartStack" xmi:id="_HL20VYQtEemTPe1F-QBjjA" elementId="PartStack@6b875736" visible="false" containerData="3589" selectedElement="_HL20VoQtEemTPe1F-QBjjA">
+                    <tags>Minimized</tags>
+                    <tags>MinimizedByZoom</tags>
                     <children xsi:type="advanced:Placeholder" xmi:id="_HL20VoQtEemTPe1F-QBjjA" elementId="org.eclipse.ui.console.ConsoleView" ref="_HL_-5oQtEemTPe1F-QBjjA" closeable="true">
                       <tags>View</tags>
                       <tags>categoryTag:General</tags>
@@ -329,10 +335,9 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_HL_-N4QtEemTPe1F-QBjjA" elementId="org.eclipse.ui.editorss" selectedElement="_HL_-OIQtEemTPe1F-QBjjA">
-      <children xsi:type="basic:PartStack" xmi:id="_HL_-OIQtEemTPe1F-QBjjA" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_UHoWoIz3EemRzNrSvlnjoA">
+      <children xsi:type="basic:PartStack" xmi:id="_HL_-OIQtEemTPe1F-QBjjA" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_bW85gIz2EemRzNrSvlnjoA">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
-        <tags>active</tags>
         <children xsi:type="basic:Part" xmi:id="_UFKG4Iz2EemRzNrSvlnjoA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="applicationContext.xml" iconURI="platform:/plugin/org.springframework.ide.eclipse.config.ui/icons/bean-config.png" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;com.springsource.sts.config.ui.editors.SpringConfigEditor&quot; name=&quot;applicationContext.xml&quot; partName=&quot;applicationContext.xml&quot; title=&quot;applicationContext.xml&quot; tooltip=&quot;AOP-Proj12-Spring-AOP-Declarative-PointCut/src/main/java/com/nt/cfgs/applicationContext.xml&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/AOP-Proj12-Spring-AOP-Declarative-PointCut/src/main/java/com/nt/cfgs/applicationContext.xml&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
@@ -340,21 +345,19 @@
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_bW85gIz2EemRzNrSvlnjoA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="AroundAdviceTest.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;AroundAdviceTest.java&quot; partName=&quot;AroundAdviceTest.java&quot; title=&quot;AroundAdviceTest.java&quot; tooltip=&quot;AOP-Proj12-Spring-AOP-Declarative-PointCut/src/main/java/com/nt/test/AroundAdviceTest.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/AOP-Proj12-Spring-AOP-Declarative-PointCut/src/main/java/com/nt/test/AroundAdviceTest.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;282&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;AroundAdviceTest.java&quot; partName=&quot;AroundAdviceTest.java&quot; title=&quot;AroundAdviceTest.java&quot; tooltip=&quot;AOP-Proj12-Spring-AOP-Declarative-PointCut/src/main/java/com/nt/test/AroundAdviceTest.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/AOP-Proj12-Spring-AOP-Declarative-PointCut/src/main/java/com/nt/test/AroundAdviceTest.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;810&quot; selectionTopPixel=&quot;210&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_UHoWoIz3EemRzNrSvlnjoA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="PerformanceMonitoringAdvice.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;PerformanceMonitoringAdvice.java&quot; partName=&quot;PerformanceMonitoringAdvice.java&quot; title=&quot;PerformanceMonitoringAdvice.java&quot; tooltip=&quot;AOP-Proj12-Spring-AOP-Declarative-PointCut/src/main/java/com/nt/advice/PerformanceMonitoringAdvice.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/AOP-Proj12-Spring-AOP-Declarative-PointCut/src/main/java/com/nt/advice/PerformanceMonitoringAdvice.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;659&quot; selectionTopPixel=&quot;199&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;PerformanceMonitoringAdvice.java&quot; partName=&quot;PerformanceMonitoringAdvice.java&quot; title=&quot;PerformanceMonitoringAdvice.java&quot; tooltip=&quot;AOP-Proj12-Spring-AOP-Declarative-PointCut/src/main/java/com/nt/advice/PerformanceMonitoringAdvice.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/AOP-Proj12-Spring-AOP-Declarative-PointCut/src/main/java/com/nt/advice/PerformanceMonitoringAdvice.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;50&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
-          <tags>active</tags>
-          <tags>activeOnClose</tags>
         </children>
-        <children xsi:type="basic:Part" xmi:id="_lOOrMIz3EemRzNrSvlnjoA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="BankPointCut.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;BankPointCut.java&quot; partName=&quot;BankPointCut.java&quot; title=&quot;BankPointCut.java&quot; tooltip=&quot;AOP-Proj12-Spring-AOP-Declarative-PointCut/src/main/java/com/nt/pointcut/BankPointCut.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/AOP-Proj12-Spring-AOP-Declarative-PointCut/src/main/java/com/nt/pointcut/BankPointCut.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;131&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;321&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_lOOrMIz3EemRzNrSvlnjoA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="DynaBankPointCut.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DynaBankPointCut.java&quot; partName=&quot;DynaBankPointCut.java&quot; title=&quot;DynaBankPointCut.java&quot; tooltip=&quot;AOP-Proj12-Spring-AOP-Declarative-PointCut/src/main/java/com/nt/pointcut/DynaBankPointCut.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/AOP-Proj12-Spring-AOP-Declarative-PointCut/src/main/java/com/nt/pointcut/DynaBankPointCut.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;575&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;507&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
@@ -365,6 +368,8 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot; currentWorkingSetName=&quot;Aggregate for window 1549416159351&quot; org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets=&quot;0&quot;>&#xD;&#xA;&lt;lastRecentlyUsedFilters/>&#xD;&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_HL_-UYQtEemTPe1F-QBjjA" elementId="org.eclipse.ui.navigator.ProjectExplorer">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -672,7 +677,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_HL__JIQtEemTPe1F-QBjjA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="__fkSAIzsEemRzNrSvlnjoA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_HMAMDoQtEemTPe1F-QBjjA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_Pyn-oI2OEemOyOURiaCt3w" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_HMAMDoQtEemTPe1F-QBjjA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_HL__MYQtEemTPe1F-QBjjA" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -729,7 +734,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_HL__noQtEemTPe1F-QBjjA" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="__fojdIzsEemRzNrSvlnjoA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_HMALt4QtEemTPe1F-QBjjA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_PyuFQI2OEemOyOURiaCt3w" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_HMALt4QtEemTPe1F-QBjjA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_HL__roQtEemTPe1F-QBjjA" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -832,7 +837,7 @@
         <tags>TrimStack</tags>
         <tags>Draggable</tags>
       </children>
-      <children xsi:type="menu:ToolControl" xmi:id="_HL__5YQtEemTPe1F-QBjjA" elementId="PartStack@6b875736(IDEWindow).(org.eclipse.debug.ui.DebugPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+      <children xsi:type="menu:ToolControl" xmi:id="_HL__5YQtEemTPe1F-QBjjA" elementId="PartStack@6b875736(IDEWindow).(org.eclipse.debug.ui.DebugPerspective)" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
         <tags>TrimStack</tags>
         <tags>Draggable</tags>
       </children>
