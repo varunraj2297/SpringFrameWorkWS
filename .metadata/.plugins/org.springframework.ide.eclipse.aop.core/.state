@@ -5,7 +5,9 @@
 <aop-project name="IOC-Proj79-Anno-BeanLifeCycle-Declaratice Approach-atPostConstructandatPreDestroy"/>
 <aop-project name="IOC-Proj72-Anno-Propertiesfile"/>
 <aop-project name="IOC-Proj69-Anno-LayeredApplication-Student-RealTimeDI-UsingPropertyFile"/>
+<aop-project name="AsjpectjAOP-Proj19-Anno-AllAdvices"/>
 <aop-project name="IOC-Proj34-BankProj-LayeredApplication-NestedBeanFactory"/>
+<aop-project name="AsjpectjAOP-Proj17-ThrowsAdvice"/>
 <aop-project name="AOP-Proj04-Spring-AOP-Declarative-Security-BeforeAdvice"/>
 <aop-project name="DAO-Proj10-BasicCurdOperations-Profiles"/>
 <aop-project name="IOC-Proj01-BasicSetterInjection"/>
@@ -36,16 +38,16 @@
 <aop-project name="DAO-Proj15-SpringBoot-NamedParameters"/>
 <aop-project name="IOC-Proj57-InstanceFactoryMethod-IPLScoreUseCase"/>
 <aop-project name="IOC-Proj22-BeanInheritance-UsingConstructorInjection"/>
-<aop-project name="IOC-Proj63-PropertyEditors-BeanFactory"/>
 <aop-project name="AOP-Proj08-Spring-AOP-Declarative-AfterAdvice"/>
+<aop-project name="IOC-Proj63-PropertyEditors-BeanFactory"/>
 <aop-project name="IOC-Proj65-Anno-Required"/>
 <aop-project name="DAO-Proj13-BatchProcessing"/>
 <aop-project name="IOC-Proj26-DependencyLookup"/>
 <aop-project name="IOC-Proj56-StaticFactoryMethod-IPLScoreUseCase"/>
 <aop-project name="IOC-Proj17-InnerBean-POC"/>
+<aop-project name="AOP-Proj07-SpringBoot-AOP-Security-BeforeAdvice"/>
 <aop-project name="IOC-Proj62-PropertyEditors"/>
 <aop-project name="SpringORM-Proj02-SpringBoot-BasicCurdOperations"/>
-<aop-project name="AOP-Proj07-SpringBoot-AOP-Security-BeforeAdvice"/>
 <aop-project name="IOC-Proj09-StrategyDP-Spring"/>
 <aop-project name="IOC-Proj50-NeedOfLookUpMethodDL-Solution1UsingTraditionalDL"/>
 <aop-project name="IOC-Proj10-LayeredApplication-Student-RealTimeDI"/>
@@ -68,12 +70,13 @@
 <aop-project name="DAO-Proj20-SimpleJdbcCall"/>
 <aop-project name="IOC-Proj05-BeanCollabaration-LooseCoupling"/>
 <aop-project name="IOC-Proj24-CollectionMerging"/>
+<aop-project name="AsjpectjAOP-Proj15-BeforeAdvice"/>
 <aop-project name="DAO-Proj03-100p-BasicCurdOperations"/>
 <aop-project name="IOC-Proj37-BeanCollabaration-LooseCouplingUsingAc"/>
 <aop-project name="IOC-Proj44-UtilNameSpace"/>
 <aop-project name="IOC-Proj38-LayeredApplication-Student-RealTimeDI-UsingPropertyFile"/>
-<aop-project name="IOC-Proj45-BeanLifeCycle-Declaratice Approach"/>
 <aop-project name="AOP-Proj11-Spring-AOP-Declarative-ThrowsAdvice-ExceptionGrapher"/>
+<aop-project name="IOC-Proj45-BeanLifeCycle-Declaratice Approach"/>
 <aop-project name="IOC-Proj59-BeanPostProcessor-LMI-UseCase-BeanFactory"/>
 <aop-project name="IOC-Proj14-CyclicDependenyManagement-Solution1-POC"/>
 <aop-project name="IOC-Proj67-Anno-Sterotypes"/>
@@ -103,12 +106,13 @@
 <aop-project name="IOC-Proj41-Spring-I18n"/>
 <aop-project name="IOC-Proj26-DependencyLookup using static variable"/>
 <aop-project name="IOC-Proj83-100p-Spring-I18n"/>
-<aop-project name="IOC-Proj43-Spring-I18n-EventHandling"/>
 <aop-project name="AOP-Proj10-Spring-AOP-Declarative-ThrowsAdvice-POC"/>
+<aop-project name="IOC-Proj43-Spring-I18n-EventHandling"/>
 <aop-project name="IOC-Proj85-SpringBoot-Basics2"/>
 <aop-project name="DAO-Proj19-SpringBoot-SimpleJdbcInsert-AutoEmpNo-BPSPS"/>
 <aop-project name="IOC-Proj23-LayeredApplication-Student-RealTimeDI-WithBeanInheritance"/>
 <aop-project name="IOC-Proj68-Anno-BeanCollabaration-LooseCoupling-"/>
+<aop-project name="AsjpectjAOP-Proj14-AroundAdvice-ProxyInterface"/>
 <aop-project name="DAO-Proj11-EmpSearch-WebApp"/>
 <aop-project name="IOC-Proj19-LayeredApplication-Student-RealTimeDI Using Properties"/>
 <aop-project name="IOC-Proj58-1-BeanPostProcessor-LMI-UseCase"/>
@@ -119,7 +123,7 @@
 <aop-project name="IOC-Proj32-LayeredApplication-NestedBeanFactory"/>
 <aop-project name="IOC-Proj78-Anno-LayeredApplication-NestedBeanFactory-UsingAnnoResource,Named-AC-setParent(-)"/>
 <aop-project name="IOC-Proj87-Spel"/>
-<aop-project name="DAO-Proj16-SimpleJdbcInsert"/>
 <aop-project name="AOP-Proj06-100p-Spring-AOP-Security-BeforeAdvice"/>
+<aop-project name="DAO-Proj16-SimpleJdbcInsert"/>
 <aop-project name="IOC-Proj04-BeanCollabaration-TightCoupling"/>
 </aop-reference-model>
