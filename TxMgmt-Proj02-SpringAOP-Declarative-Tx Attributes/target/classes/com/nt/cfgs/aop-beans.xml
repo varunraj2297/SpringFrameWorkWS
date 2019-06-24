@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+	<bean id="dstx"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<constructor-arg ref="hkDs" />
+	</bean>
+
+	<!-- <bean id="nmtas"
+		class="org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource">
+		<property name="properties">
+			<props>
+				<prop key="caller">PROPAGATION_REQUIRED</prop>
+				<prop key="transferMoney">PROPAGATION_REQUIRED</prop>
+				<prop key="transferMoney">PROPAGATION_REQUIRES_NEW</prop>
+				<prop key="transferMoney">PROPAGATION_SUPPORTS</prop>
+				<prop key="transferMoney">PROPAGATION_NOT_SUPPORTED</prop>
+				<prop key="transferMoney">PROPAGATION_NEVER</prop>
+				<prop key="transferMoney">PROPAGATION_MANDATORY</prop>
+				<prop key="transferMoney">+java.lang.NullPointerException</prop> 
+					<prop key="transferMoney">+java.lang.ArithmeticException</prop> <prop key="transferMoney">-java.lang.IllegalAccessException</prop>
+				<prop key="transferMoney">timeout_10</prop>
+			</props>
+		</property>
+	</bean> -->
+
+	<bean id="basetpfb"
+		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean"
+		abstract="true" name="base">
+		<property name="transactionManager" ref="dstx" />
+		<!-- <property name="target" ref="bankService" /> -->
+		<!-- <property name="transactionAttributeSource" ref="nmtas" /> -->
+		<property name="transactionAttributes">
+			<props>
+				<prop key="caller">PROPAGATION_REQUIRED</prop>
+				<!-- <prop key="transferMoney">PROPAGATION_REQUIRED</prop> -->
+				<!-- <prop key="transferMoney">PROPAGATION_REQUIRES_NEW</prop> -->
+				<!-- <prop key="transferMoney">PROPAGATION_SUPPORTS</prop> -->
+				<!-- <prop key="transferMoney">PROPAGATION_NOT_SUPPORTED</prop> -->
+				<!-- <prop key="transferMoney">PROPAGATION_NEVER</prop> -->
+				<prop key="transferMoney">PROPAGATION_MANDATORY</prop>
+				<!-- <prop key="transferMoney">+java.lang.NullPointerException</prop> 
+					<prop key="transferMoney">+java.lang.ArithmeticException</prop> <prop key="transferMoney">-java.lang.IllegalAccessException</prop> -->
+				<!-- <prop key="transferMoney">timeout_10</prop> -->
+			</props>
+		</property>
+	</bean>
+
+	<bean id="servicetpfb" parent="basetpfb">
+		<property name="target" ref="bankService" />
+	</bean>
+
+	<bean id="callertpfb" parent="basetpfb">
+		<property name="target" ref="callerMethod" />
+	</bean>
+</beans>
