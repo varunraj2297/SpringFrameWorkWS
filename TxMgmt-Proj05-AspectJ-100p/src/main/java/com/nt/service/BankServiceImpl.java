@@ -33,7 +33,9 @@ public class BankServiceImpl implements BankService{
 		return (count==0)?"Account not found to deposite":"Money is deposited to "+accno+" account.";		
 	}
 
+	//@Transactional
 	@Transactional(transactionManager="dstx",propagation=Propagation.REQUIRED,readOnly=false)
+	//@Transactional(transactionManager="dstx",propagation=Propagation.SUPPORTS,readOnly=false)
 	@Override
 	public String transferMoney(int srAccno, int destAccno, float amt) throws Exception{
 		int result1=0,result2=0;

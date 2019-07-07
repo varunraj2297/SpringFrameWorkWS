@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+
+    <bean id="hbTxMgmr"
+		class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+		<constructor-arg ref="localSesFact" />
+	</bean>
+
+	<!-- <tx:advice id="txAdvice" transaction-manager="hbTxMgmr">
+		<tx:attributes>
+			<tx:method  name="transferMoney" propagation="REQUIRED" read-only="false" rollback-for="java.lang.IllegalAccessException" timeout="10"/>
+		     <tx:method  name="transferMoney" propagation="REQUIRED" read-only="false"/> 
+		</tx:attributes>
+	</tx:advice>
+
+	<aop:config>
+		<aop:pointcut
+			expression="execution(java.lang.String com.nt.service.BankService.transferMoney(..))"
+			id="ptc" />
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="ptc" />
+	</aop:config>
+ -->
+ 
+ <!-- <tx:annotation-driven transaction-manager="hbTxMgmr"/> -->
+ <!-- or -->
+ <tx:annotation-driven />  <!-- we can also give transaction-manager="dstx" in the @Transactional annotation (see in Service class)-->
+
+</beans>

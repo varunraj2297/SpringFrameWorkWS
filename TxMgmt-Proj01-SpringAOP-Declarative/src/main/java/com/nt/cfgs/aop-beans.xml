@@ -10,10 +10,10 @@
        <property name="properties">
           <props>
              <prop key="transferMoney">PROPAGATION_REQUIRED</prop>
-             <!-- <prop key="transferMoney">PROPAGATION_SUPPORTS</prop> -->
-             <prop key="transferMoney">+java.lang.NullPointerException</prop>
+            <!--  <prop key="transferMoney">PROPAGATION_SUPPORTS</prop> -->
+             <!-- <prop key="transferMoney">+java.lang.NullPointerException</prop>
              <prop key="transferMoney">+java.lang.ArithmeticException</prop>
-             <prop key="transferMoney">-java.lang.IllegalAccessException</prop>
+             <prop key="transferMoney">-java.lang.IllegalAccessException</prop> -->
             <!--  <prop key="transferMoney">timeout_10</prop> -->
           </props>
        </property>

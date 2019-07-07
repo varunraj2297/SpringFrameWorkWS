@@ -16,7 +16,7 @@ public class TxMgmrTest {
 		
         
 		try {
-			System.out.println(proxy.transferMoney(101, 103, 500));
+			System.out.println(proxy.transferMoney(121, 103, 500));
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/jee https://www.springframework.org/schema/jee/spring-jee-4.3.xsd
+		http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+
+
+    <jee:jndi-lookup id="dTxService" jndi-name="javax/transaction/UserTransaction"/>
+    <jee:jndi-lookup id="dTxMgmr" jndi-name="javax/transaction/TransactionManager"/>
+    
+    <bean id="jtaTxMgmr" class="org.springframework.transaction.jta.JtaTransactionManager">
+       <property name="userTransaction" ref="dTxService"/>
+       <property name="transactionManager" ref="dTxMgmr"/>
+       <property name="defaultTimeout" value="100"/>
+    </bean>
+    
+    <tx:annotation-driven transaction-manager="jtaTxMgmr"/>
+</beans>

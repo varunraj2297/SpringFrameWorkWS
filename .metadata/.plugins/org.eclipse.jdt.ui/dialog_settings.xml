@@ -7,7 +7,7 @@
 	<item value="760" key="org.eclipse.jdt.uiformatter_pagemodify_dialog.preferred_height"/>
 	<item value="0" key="org.eclipse.jdt.uiformatter_pagemodify_dialog.preferred_x"/>
 	<item value="0" key="org.eclipse.jdt.uiformatter_pagemodify_dialog.preferred_y"/>
-	<item value="C:\oraclexe\app\oracle\product\11.2.0\server\jdbc\lib" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="F:\third party apis\spring-framework-5.1.4.RELEASE-dist\spring-framework-5.1.4.RELEASE\libs" key="org.eclipse.jdt.ui.lastextjar"/>
 	<item value="40" key="org.eclipse.jdt.ui.codeformatter.line_wrapping_tab_page.preview_line_width"/>
 	<item value="0" key="org.eclipse.jdt.uiformatter_page.preference_scroll_position"/>
 	<item value="356" key="org.eclipse.jdt.uiformatter_page.last_focus_index"/>
@@ -156,11 +156,16 @@
 		<item value="10" key="index"/>
 	</section>
 	<section name="BuildPathsPropertyPage">
-		<item value="2" key="pageIndex"/>
+		<item value="3" key="pageIndex"/>
 	</section>
 	<section name="NewPackageWizardPage">
 		<item value="false" key="create_package_info_java"/>
 	</section>
 	<section name="quick_assist_proposal_size">
+	</section>
+	<section name="JavaSearchPage">
+		<item value="0" key="HISTORY_SIZE"/>
+		<item value="false" key="CASE_SENSITIVE"/>
+		<item value="11" key="INCLUDE_MASK"/>
 	</section>
 </section>

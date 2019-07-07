@@ -30,6 +30,7 @@
 <aop-project name="DAO-Proj17-SimpleJdbcInsert-AutoEmpNo-BPSPS"/>
 <aop-project name="SpringData-Proj03-SpringBoot-BasicCurdOperations-NoSql-MongoDb"/>
 <aop-project name="IOC-Proj82-100p-MethodInjectionOrMethodReplacer"/>
+<aop-project name="TxMgmt-Proj07-AspectJ-DistributedTxMgmt-Atomokis"/>
 <aop-project name="IOC-Proj21-BeanInheritance-UsingSetterInjection"/>
 <aop-project name="IOC-Proj31-DependencyCheck"/>
 <aop-project name="TxMgmt-Proj01-SpringAOP-Declarative"/>
@@ -37,6 +38,7 @@
 <aop-project name="IOC-Proj58-0-BeanPostProcessor-POC"/>
 <aop-project name="IOC-Proj39-BankProj-LayeredApplication-NestedBeanFactory-UsingProperties-AC"/>
 <aop-project name="AOP-Proj09-Spring-AOP-Declarative-AfterAdvice-IdValidate"/>
+<aop-project name="MVC-Proj003-SecondApp"/>
 <aop-project name="IOC-Proj54-FactoryBean"/>
 <aop-project name="DAO-Proj15-SpringBoot-NamedParameters"/>
 <aop-project name="IOC-Proj57-InstanceFactoryMethod-IPLScoreUseCase"/>
@@ -44,10 +46,12 @@
 <aop-project name="AOP-Proj08-Spring-AOP-Declarative-AfterAdvice"/>
 <aop-project name="IOC-Proj63-PropertyEditors-BeanFactory"/>
 <aop-project name="IOC-Proj65-Anno-Required"/>
+<aop-project name="MVC-Proj005-SecondApp-Improvised-URLFilenameViewController"/>
 <aop-project name="DAO-Proj13-BatchProcessing"/>
 <aop-project name="IOC-Proj26-DependencyLookup"/>
 <aop-project name="IOC-Proj56-StaticFactoryMethod-IPLScoreUseCase"/>
 <aop-project name="IOC-Proj17-InnerBean-POC"/>
+<aop-project name="TxMgmt-Proj11-SpringData-JPA-SpringBoot-BasicCurdOperations"/>
 <aop-project name="AOP-Proj07-SpringBoot-AOP-Security-BeforeAdvice"/>
 <aop-project name="IOC-Proj62-PropertyEditors"/>
 <aop-project name="SpringORM-Proj02-SpringBoot-BasicCurdOperations"/>
@@ -105,11 +109,13 @@
 <aop-project name="IOC-Proj49-NeedOfLookUpMethodDL-Problem"/>
 <aop-project name="IOC-Proj84-SpringBoot-Basics"/>
 <aop-project name="IOC-Proj27-FactoryMethodBeanInitialization"/>
+<aop-project name="MVC-Proj002-FirstApp"/>
 <aop-project name="DAO-Proj09-100p-BasicCurdOperations-Profiles"/>
 <aop-project name="TxMgmt-Proj04-AspectJ-Annotation"/>
 <aop-project name="SpringORM-Proj01-BasicCurdOperations"/>
 <aop-project name="IOC-Proj41-Spring-I18n"/>
 <aop-project name="IOC-Proj26-DependencyLookup using static variable"/>
+<aop-project name="TxMgmt-Proj10-SpringBoot-SpringORM-BasicCurdOperations"/>
 <aop-project name="IOC-Proj83-100p-Spring-I18n"/>
 <aop-project name="AOP-Proj10-Spring-AOP-Declarative-ThrowsAdvice-POC"/>
 <aop-project name="IOC-Proj43-Spring-I18n-EventHandling"/>
@@ -132,5 +138,7 @@
 <aop-project name="IOC-Proj87-Spel"/>
 <aop-project name="AOP-Proj06-100p-Spring-AOP-Security-BeforeAdvice"/>
 <aop-project name="DAO-Proj16-SimpleJdbcInsert"/>
+<aop-project name="TxMgmt-Proj08-Distributed-webapp"/>
+<aop-project name="MVC-Proj004-SecondApp-Improvised-ParameterizableViewController"/>
 <aop-project name="IOC-Proj04-BeanCollabaration-TightCoupling"/>
 </aop-reference-model>

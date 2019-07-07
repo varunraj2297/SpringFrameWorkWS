@@ -1,0 +1,4 @@
+execute this create command in both the databases(ora & mysql)
+
+create table dtx_bank_account(accno int,holdername varchar(20),balance float);
+
