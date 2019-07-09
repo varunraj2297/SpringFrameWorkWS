@@ -99,6 +99,7 @@
 <aop-project name="IOC-Proj53-MethodInjectionOrMethodReplacer"/>
 <aop-project name="IOC-Proj70-Anno-LookUpMethodDL-FinalSolution"/>
 <aop-project name="IOC-Proj64-CustomPropertyEditors-ApplicationContext"/>
+<aop-project name="MVC-Proj006-SecondApp-Two-Container-Story"/>
 <aop-project name="DAO-Proj02-Anno-BasicCurdOperations"/>
 <aop-project name="IOC-Proj12-ConstructorInjectionResolving"/>
 <aop-project name="DAO-Proj21-SimpleJdbcCall-ProcessingMultipleRecordsUsingProcedure"/>
