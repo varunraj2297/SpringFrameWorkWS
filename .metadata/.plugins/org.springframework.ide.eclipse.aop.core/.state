@@ -2,6 +2,7 @@
 <aop-reference-model>
 <aop-project name="SpringData-Proj02-JPA-SpringBoot-PagingAndSorting"/>
 <aop-project name="AOP-Proj03-Spring-AOP-Declarative-BeforeAdvice"/>
+<aop-project name="MVC-Proj007-ListEmployees"/>
 <aop-project name="TxMgmt-Proj03-AspectJ-Declarative"/>
 <aop-project name="IOC-Proj72-Anno-Propertiesfile"/>
 <aop-project name="IOC-Proj79-Anno-BeanLifeCycle-Declaratice Approach-atPostConstructandatPreDestroy"/>
@@ -10,11 +11,12 @@
 <aop-project name="IOC-Proj34-BankProj-LayeredApplication-NestedBeanFactory"/>
 <aop-project name="AsjpectjAOP-Proj17-ThrowsAdvice"/>
 <aop-project name="AOP-Proj04-Spring-AOP-Declarative-Security-BeforeAdvice"/>
-<aop-project name="DAO-Proj10-BasicCurdOperations-Profiles"/>
 <aop-project name="TxMgmt-Proj05-AspectJ-100p"/>
+<aop-project name="DAO-Proj10-BasicCurdOperations-Profiles"/>
 <aop-project name="IOC-Proj01-BasicSetterInjection"/>
 <aop-project name="IOC-Proj42-BankProj-LayeredApplication-NestedBeanFactory-UsingProperties_AC_with_context_place_holder_tag_in_context_nameSpace"/>
 <aop-project name="IOC-Proj20-NullInjection-POC"/>
+<aop-project name="MVC-Proj009-AbstractCommandController-HotelSearchUseCase"/>
 <aop-project name="DAO-Proj05-SpringBoot-JDBCTemplate-DirectMethods-yml"/>
 <aop-project name="IOC-Proj26-DependencyLookup_Single IOC_Container Ext1"/>
 <aop-project name="DAO-Proj08-SpringBoot-Profiles-yml2"/>
@@ -55,9 +57,10 @@
 <aop-project name="AOP-Proj07-SpringBoot-AOP-Security-BeforeAdvice"/>
 <aop-project name="IOC-Proj62-PropertyEditors"/>
 <aop-project name="SpringORM-Proj02-SpringBoot-BasicCurdOperations"/>
+<aop-project name="MVC-Proj008-AbstractCommandController"/>
 <aop-project name="IOC-Proj09-StrategyDP-Spring"/>
-<aop-project name="IOC-Proj50-NeedOfLookUpMethodDL-Solution1UsingTraditionalDL"/>
 <aop-project name="TxMgmt-Proj06-AspectJ-SpringBoot"/>
+<aop-project name="IOC-Proj50-NeedOfLookUpMethodDL-Solution1UsingTraditionalDL"/>
 <aop-project name="IOC-Proj10-LayeredApplication-Student-RealTimeDI"/>
 <aop-project name="IOC-Proj88-Spel-Annotations"/>
 <aop-project name="DAO-Proj18-100p-SimpleJdbcInsert-AutoEmpNo-BPSPS"/>
@@ -115,8 +118,8 @@
 <aop-project name="TxMgmt-Proj04-AspectJ-Annotation"/>
 <aop-project name="SpringORM-Proj01-BasicCurdOperations"/>
 <aop-project name="IOC-Proj41-Spring-I18n"/>
-<aop-project name="IOC-Proj26-DependencyLookup using static variable"/>
 <aop-project name="TxMgmt-Proj10-SpringBoot-SpringORM-BasicCurdOperations"/>
+<aop-project name="IOC-Proj26-DependencyLookup using static variable"/>
 <aop-project name="IOC-Proj83-100p-Spring-I18n"/>
 <aop-project name="AOP-Proj10-Spring-AOP-Declarative-ThrowsAdvice-POC"/>
 <aop-project name="IOC-Proj43-Spring-I18n-EventHandling"/>

@@ -1,0 +1,3 @@
+create table hotel
+(hotelid number(10),hname varchar2(15),type varchar2(10),
+rating number(2,1),cost float,location varchar2(10))
