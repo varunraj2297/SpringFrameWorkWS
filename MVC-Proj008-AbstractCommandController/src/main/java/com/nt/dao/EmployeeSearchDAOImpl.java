@@ -20,8 +20,9 @@ public class EmployeeSearchDAOImpl implements EmployeeSearchDAO {
 			+ " OR JOB IS NOT NULL AND JOB=?" + " OR SAL IS NOT NULL AND SAL=?";
 	*/
 	
-	private static final String GET_EMP_BY_SEARCH = "SELECT EMPNO as eno,ENAME,JOB as desg,SAL as salary,MGR,DEPTNO FROM EMP WHERE EMPNO=? OR ENAME=? OR JOB=? OR  SAL=?";
+	//private static final String GET_EMP_BY_SEARCH = "SELECT EMPNO as eno,ENAME,JOB as desg,SAL as salary,MGR,DEPTNO FROM EMP WHERE EMPNO=? OR ENAME=? OR JOB=? OR  SAL=?";
 
+	private static String GET_EMP_BY_SEARCH;
 	private JdbcTemplate jt;
 
 	public EmployeeSearchDAOImpl(JdbcTemplate jt) {
@@ -36,8 +37,23 @@ public class EmployeeSearchDAOImpl implements EmployeeSearchDAO {
 		
 		/*resultlist = jt.query(GET_EMP_BY_SEARCH, new EmployeeSearchRowMapper(), bo.getEno(), bo.getEname(),
 				bo.getDesg(), bo.getSalary());*/
+		try {
 		rowMapper=new BeanPropertyRowMapper(ResultEmployeeBO.class);
-		resultlist=(List<ResultEmployeeBO>) jt.query(GET_EMP_BY_SEARCH,new RowMapperResultSetExtractor(rowMapper),bo.getEno(),bo.getEname(),bo.getDesg(),bo.getSalary());
+		if(bo.getEno()==0 && bo.getEname().equals("") && bo.getDesg().equals("") && bo.getSalary()==0) {
+			System.out.println("1");
+			GET_EMP_BY_SEARCH="SELECT EMPNO as eno,ENAME,JOB as desg,SAL as salary,MGR,DEPTNO FROM EMP WHERE MGR IS NOT NULL";
+		    resultlist=(List<ResultEmployeeBO>) jt.query(GET_EMP_BY_SEARCH,new RowMapperResultSetExtractor(rowMapper));
+		}
+		else {
+			GET_EMP_BY_SEARCH= "SELECT EMPNO as eno,ENAME,JOB as desg,SAL as salary,MGR,DEPTNO FROM EMP WHERE EMPNO=? OR ENAME=? OR JOB=? OR  SAL=?";
+		    resultlist=(List<ResultEmployeeBO>) jt.query(GET_EMP_BY_SEARCH,new RowMapperResultSetExtractor(rowMapper),bo.getEno(),bo.getEname(),bo.getDesg(),bo.getSalary());
+		}
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		
 		return resultlist;
 	}
 

@@ -11,8 +11,9 @@ import com.nt.bo.HotelResultBO;
 
 public class HotelDAOImpl implements HotelDAO{
 	
-	private static final String GET_HOTELS="SELECT HOTELID,HNAME,TYPE,RATING,COST,LOCATION FROM HOTEL WHERE HOTELID=? OR HNAME=? OR TYPE=? OR COST=?";
-
+	//private static final String GET_HOTELS="SELECT HOTELID,HNAME,TYPE,RATING,COST,LOCATION FROM HOTEL WHERE HOTELID=? OR HNAME=? OR TYPE=? OR COST=?";
+	
+	private static String GET_HOTELS;
 	private JdbcTemplate jt;
 	
 	
@@ -28,8 +29,14 @@ public class HotelDAOImpl implements HotelDAO{
 		List<HotelResultBO> listRBO=null;
 		
 		rowMapper=new BeanPropertyRowMapper<HotelResultBO>(HotelResultBO.class);
-		listRBO=(List<HotelResultBO>) jt.query(GET_HOTELS,new RowMapperResultSetExtractor(rowMapper), bo.getHotelid(),bo.getHname(),bo.getType(),bo.getCost());
-		
+		if(bo.getHotelid()==0 && bo.getHname().equals("") && bo.getType().equals("") && bo.getCost()==0) {
+			GET_HOTELS="SELECT HOTELID,HNAME,TYPE,RATING,COST,LOCATION FROM HOTEL";
+			listRBO=(List<HotelResultBO>) jt.query(GET_HOTELS,new RowMapperResultSetExtractor(rowMapper));
+		}
+		else {
+			GET_HOTELS="SELECT HOTELID,HNAME,TYPE,RATING,COST,LOCATION FROM HOTEL WHERE HOTELID=? OR HNAME=? OR TYPE=? OR COST=?";
+			listRBO=(List<HotelResultBO>) jt.query(GET_HOTELS,new RowMapperResultSetExtractor(rowMapper), bo.getHotelid(),bo.getHname(),bo.getType(),bo.getCost());
+		}
 		return listRBO;
 	}
    
