@@ -6,8 +6,9 @@ import lombok.Data;
 public class CustomerCommand {
 	private String cname;
 	private String caddrs;
-	private Long mobileNo;
-	private Float billAmount;
+	private Long mobileNo=9999999999L;
+	private Float billAmount=0.0f;
+	private String hbox="no";
 	
     
 	public CustomerCommand() {

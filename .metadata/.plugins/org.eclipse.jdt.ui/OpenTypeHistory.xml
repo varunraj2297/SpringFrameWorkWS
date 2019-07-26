@@ -42,4 +42,6 @@
 <typeInfo handle="=MVC-Proj009-AbstractCommandController-HotelSearchUseCase/src\/main\/java&lt;com.nt.dto{HotelDTO.java[HotelDTO" modifiers="1" timestamp="1563018648318"/>
 <typeInfo handle="=MVC-Proj009-AbstractCommandController-HotelSearchUseCase/src\/main\/java&lt;com.nt.service{HotelService.java[HotelService" modifiers="513" timestamp="1563006748764"/>
 <typeInfo handle="=MVC-Proj009-AbstractCommandController-HotelSearchUseCase/C:\/Users\/hp\/.m2\/repository\/org\/springframework\/spring-webmvc\/3.2.18.RELEASE\/spring-webmvc-3.2.18.RELEASE.jar&lt;org.springframework.web.servlet.mvc(AbstractCommandController.class[AbstractCommandController" modifiers="1049633" timestamp="1562938851507"/>
+<typeInfo handle="=MVC-Proj012-MiniProject-AllControllers-CURD-Operations/C:\/Users\/hp\/.m2\/repository\/org\/springframework\/spring-webmvc\/3.2.18.RELEASE\/spring-webmvc-3.2.18.RELEASE.jar&lt;org.springframework.web.servlet.mvc(AbstractController.class[AbstractController" modifiers="1057" timestamp="1562938851507"/>
+<typeInfo handle="=MVC-Proj012-MiniProject-AllControllers-CURD-Operations/C:\/Users\/hp\/.m2\/repository\/org\/springframework\/spring-webmvc\/3.2.18.RELEASE\/spring-webmvc-3.2.18.RELEASE.jar&lt;org.springframework.web.servlet.mvc(SimpleFormController.class[SimpleFormController" modifiers="1048609" timestamp="1562938851507"/>
 </typeInfoHistroy>

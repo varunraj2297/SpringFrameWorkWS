@@ -7,6 +7,8 @@ h1   {color: blue;}
 p    {color: green;}
 span {
 	color: #fc3012;
+	font: x-small;
+	font-family: verdana;
 }
 </style>
 </head>

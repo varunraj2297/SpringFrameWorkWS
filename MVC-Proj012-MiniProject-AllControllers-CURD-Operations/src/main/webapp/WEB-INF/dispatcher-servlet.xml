@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+
+
+   <bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+      <property name="mappings">
+        <props>
+          <prop key="home.htm">pvc</prop>
+          <prop key="add.htm">ic</prop>
+          <prop key="report.htm">rpc</prop>
+          <prop key="edit.htm">esc</prop>
+          <prop key="delete.htm">dc</prop>
+        </props>
+      </property>
+   </bean>
+   
+   <bean id="pvc" class="org.springframework.web.servlet.mvc.ParameterizableViewController">
+     <property name="viewName" value="welcome"/>
+   </bean>
+   
+   <bean id="rpc" class="com.nt.controller.ReportController">
+      <constructor-arg ref="nobelService"/>   
+   </bean>
+   
+   <bean id="ic" class="com.nt.controller.InsertController">
+      <constructor-arg ref="nobelService"/>
+      <property name="formView" value="register"/>
+      <property name="commandName" value="cmdName"/>
+      <property name="commandClass" value="com.nt.command.NobelPrizeCommand"/>
+      <property name="sessionForm" value="true"/>
+      <property name="successView" value="report"/>
+   </bean>
+   
+   <bean id="esc" class="com.nt.controller.EditController">
+      <constructor-arg ref="nobelService"/>
+      <property name="formView" value="edit"/>
+      <property name="commandName" value="cmdName"/>
+      <property name="commandClass" value="com.nt.command.NobelPrizeCommand"/>
+      <property name="sessionForm" value="true"/>
+      <property name="successView" value="report"/>
+   </bean>
+   
+   <bean id="dc" class="com.nt.controller.DeleteController">
+     <constructor-arg ref="nobelService"/>
+   </bean>
+   
+   <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+      <property name="prefix" value="/WEB-INF/pages/"/>
+      <property name="suffix" value=".jsp"/>
+   </bean>
+   
+   
+
+</beans>

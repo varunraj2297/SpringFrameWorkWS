@@ -6,19 +6,19 @@
 <aop-project name="TxMgmt-Proj03-AspectJ-Declarative"/>
 <aop-project name="IOC-Proj72-Anno-Propertiesfile"/>
 <aop-project name="IOC-Proj79-Anno-BeanLifeCycle-Declaratice Approach-atPostConstructandatPreDestroy"/>
-<aop-project name="IOC-Proj69-Anno-LayeredApplication-Student-RealTimeDI-UsingPropertyFile"/>
 <aop-project name="AsjpectjAOP-Proj19-Anno-AllAdvices"/>
+<aop-project name="IOC-Proj69-Anno-LayeredApplication-Student-RealTimeDI-UsingPropertyFile"/>
 <aop-project name="IOC-Proj34-BankProj-LayeredApplication-NestedBeanFactory"/>
 <aop-project name="AsjpectjAOP-Proj17-ThrowsAdvice"/>
 <aop-project name="AOP-Proj04-Spring-AOP-Declarative-Security-BeforeAdvice"/>
-<aop-project name="TxMgmt-Proj05-AspectJ-100p"/>
 <aop-project name="DAO-Proj10-BasicCurdOperations-Profiles"/>
-<aop-project name="IOC-Proj42-BankProj-LayeredApplication-NestedBeanFactory-UsingProperties_AC_with_context_place_holder_tag_in_context_nameSpace"/>
+<aop-project name="TxMgmt-Proj05-AspectJ-100p"/>
 <aop-project name="IOC-Proj01-BasicSetterInjection"/>
+<aop-project name="IOC-Proj42-BankProj-LayeredApplication-NestedBeanFactory-UsingProperties_AC_with_context_place_holder_tag_in_context_nameSpace"/>
 <aop-project name="IOC-Proj20-NullInjection-POC"/>
 <aop-project name="MVC-Proj009-AbstractCommandController-HotelSearchUseCase"/>
-<aop-project name="IOC-Proj26-DependencyLookup_Single IOC_Container Ext1"/>
 <aop-project name="DAO-Proj05-SpringBoot-JDBCTemplate-DirectMethods-yml"/>
+<aop-project name="IOC-Proj26-DependencyLookup_Single IOC_Container Ext1"/>
 <aop-project name="DAO-Proj08-SpringBoot-Profiles-yml2"/>
 <aop-project name="IOC-Proj60-BeanLifeCycle-Flow"/>
 <aop-project name="IOC-Proj67-Anno-Sterotypes1"/>
@@ -146,5 +146,6 @@
 <aop-project name="DAO-Proj16-SimpleJdbcInsert"/>
 <aop-project name="TxMgmt-Proj08-Distributed-webapp"/>
 <aop-project name="MVC-Proj004-SecondApp-Improvised-ParameterizableViewController"/>
+<aop-project name="MVC-Proj012-MiniProject-AllControllers-CURD-Operations"/>
 <aop-project name="IOC-Proj04-BeanCollabaration-TightCoupling"/>
 </aop-reference-model>
