@@ -149,7 +149,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="MVC-Proj012-MiniProject-AllControllers-CURD-Operations" path="/MVC-Proj012-MiniProject-AllControllers-CURD-Operations" reloadable="true" source="org.eclipse.jst.j2ee.server:MVC-Proj012-MiniProject-AllControllers-CURD-Operations"/></Host>
+      <Context docBase="MVC-Proj028-ViewResolvers-AmbiguityProblemSolution" path="/MVC-Proj028-ViewResolvers-AmbiguityProblemSolution" reloadable="true" source="org.eclipse.jst.j2ee.server:MVC-Proj028-ViewResolvers-AmbiguityProblemSolution"/></Host>
     </Engine>
   </Service>
 </Server>

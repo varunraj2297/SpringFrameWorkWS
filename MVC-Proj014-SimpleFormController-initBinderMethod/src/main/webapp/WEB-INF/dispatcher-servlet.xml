@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+
+    <bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="mappings">
+          <props>
+           <prop key="form.htm">rc</prop>
+          </props>
+        </property>    
+    </bean>
+    
+    <bean id="rc" class="com.nt.controller.RegisterController">
+       <property name="formView" value="register_form"/>
+       <property name="commandName" value="cmdData"/>
+       <property name="commandClass" value="com.nt.command.StudentCommand"/>    
+    </bean>
+    
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"> 
+      <property name="prefix" value="/WEB-INF/pages/"/>
+      <property name="suffix" value=".jsp"></property>
+    </bean>
+</beans>
