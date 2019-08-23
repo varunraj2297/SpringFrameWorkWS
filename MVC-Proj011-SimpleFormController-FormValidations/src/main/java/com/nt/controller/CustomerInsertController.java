@@ -58,6 +58,7 @@ public class CustomerInsertController extends SimpleFormController {
 		
 		command.setCname("Bolt");
 		command.setCaddrs("Jamaica");
+		command.setMobileNo(8585858585L);
 		command.setBillAmount((float)Math.random()*1000.0f);
 		return command;
 	}

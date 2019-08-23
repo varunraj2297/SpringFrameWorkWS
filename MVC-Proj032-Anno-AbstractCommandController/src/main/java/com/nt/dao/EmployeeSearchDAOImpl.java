@@ -1,0 +1,77 @@
+package com.nt.dao;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
+import org.springframework.jdbc.core.RowMapperResultSetExtractor;
+import org.springframework.stereotype.Repository;
+
+import com.nt.bo.EmployeeBO;
+import com.nt.bo.ResultEmployeeBO;
+
+
+@Repository("empDAO")
+public class EmployeeSearchDAOImpl implements EmployeeSearchDAO {
+
+	/*private static final String GET_EMP_BY_SEARCH = "SELECT EMPNO,ENAME,JOB,SAL,MGR,DEPTNO FROM EMP"
+			+ " WHERE EMPNO IS NOT NULL AND EMPNO=? " + " OR ENAME IS NOT NULL AND ENAME=? "
+			+ " OR JOB IS NOT NULL AND JOB=?" + " OR SAL IS NOT NULL AND SAL=?";
+	*/
+	
+	//private static final String GET_EMP_BY_SEARCH = "SELECT EMPNO as eno,ENAME,JOB as desg,SAL as salary,MGR,DEPTNO FROM EMP WHERE EMPNO=? OR ENAME=? OR JOB=? OR  SAL=?";
+
+	private static String GET_EMP_BY_SEARCH;
+	
+	@Autowired
+	private JdbcTemplate jt;
+
+
+	@Override
+	public List<ResultEmployeeBO> findEmps(EmployeeBO bo) {
+		List<ResultEmployeeBO> resultlist = null;
+		BeanPropertyRowMapper<ResultEmployeeBO> rowMapper=null; 
+		
+		/*resultlist = jt.query(GET_EMP_BY_SEARCH, new EmployeeSearchRowMapper(), bo.getEno(), bo.getEname(),
+				bo.getDesg(), bo.getSalary());*/
+		try {
+		rowMapper=new BeanPropertyRowMapper(ResultEmployeeBO.class);
+		if(bo.getEno()==0 && bo.getEname().equals("") && bo.getDesg().equals("") && bo.getSalary()==0) {
+			System.out.println("1");
+			GET_EMP_BY_SEARCH="SELECT EMPNO as eno,ENAME,JOB as desg,SAL as salary,MGR,DEPTNO FROM EMP";
+		    resultlist=(List<ResultEmployeeBO>) jt.query(GET_EMP_BY_SEARCH,new RowMapperResultSetExtractor(rowMapper));
+		}
+		else {
+			GET_EMP_BY_SEARCH= "SELECT EMPNO as eno,ENAME,JOB as desg,SAL as salary,MGR,DEPTNO FROM EMP WHERE EMPNO=? OR ENAME=? OR JOB=? OR  SAL=?";
+		    resultlist=(List<ResultEmployeeBO>) jt.query(GET_EMP_BY_SEARCH,new RowMapperResultSetExtractor(rowMapper),bo.getEno(),bo.getEname(),bo.getDesg(),bo.getSalary());
+		}
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return resultlist;
+	}
+
+	/*private static class EmployeeSearchRowMapper implements RowMapper<ResultEmployeeBO> {
+	
+		@Override
+		public ResultEmployeeBO mapRow(ResultSet rs, int rowNum) throws SQLException {
+	
+			ResultEmployeeBO rEmpBo = new ResultEmployeeBO();
+			rEmpBo.setEno(rs.getInt(1));
+			rEmpBo.setEname(rs.getString(2));
+			rEmpBo.setDesg(rs.getString(3));
+			rEmpBo.setSalary(rs.getInt(4));
+			rEmpBo.setMgr(rs.getInt(5));
+			rEmpBo.setDeptno(rs.getInt(6));
+			return rEmpBo;
+		}
+	
+	}*/
+
+}

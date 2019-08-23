@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xsi:schemaLocation="http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+     <jee:jndi-lookup id="ds" jndi-name="java:/comp/env/DsJndi"/>
+        
+      <bean id="sesFact" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+		<property name="dataSource" ref="ds"/>
+		<property name="annotatedClasses">
+			<list>
+                 <value>com.aadhar.entity.AadharEntity</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.format_sql">true</prop>
+				<prop key="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+			</props>
+		</property>
+	</bean>
+
+    <bean id="ht" class="org.springframework.orm.hibernate5.HibernateTemplate">
+        <constructor-arg ref="sesFact"/>
+    </bean>
+    
+	<bean id="aadharDao" class="com.aadhar.dao.AadharDAOImpl">
+	  <constructor-arg ref="ht"/>
+	</bean>
+
+</beans>

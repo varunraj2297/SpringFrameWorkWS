@@ -38,6 +38,8 @@ public class CustomerInsertController extends SimpleFormController{
 		return new ModelAndView(getSuccessView(),"msg", msg);
 	}
 	
+	
+	
 	@Override
 	public ModelAndView handleInvalidSubmit(HttpServletRequest request, HttpServletResponse response)
 			throws Exception {

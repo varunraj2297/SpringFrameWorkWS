@@ -35,6 +35,7 @@ public class EmployeeSearchController extends AbstractCommandController{
 		List<ResultEmployeeDTO> resultListDtos=null;
 		
 		sc=(SearchCommand)command;
+		System.out.println(sc);
 		dto=new EmployeeDTO();
 		BeanUtils.copyProperties(sc, dto);
         resultListDtos=service.processEmps(dto);		

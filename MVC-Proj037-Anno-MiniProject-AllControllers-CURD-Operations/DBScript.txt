@@ -1,0 +1,6 @@
+create table NobelLaureates
+(nobelId number(5) primary key,
+year number(4),laureate varchar2(25),
+field varchar2(15))
+
+create sequence nobelId_seq start with 1000 increment by 1;

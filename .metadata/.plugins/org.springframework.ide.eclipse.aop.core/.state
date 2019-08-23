@@ -6,18 +6,20 @@
 <aop-project name="TxMgmt-Proj03-AspectJ-Declarative"/>
 <aop-project name="IOC-Proj72-Anno-Propertiesfile"/>
 <aop-project name="IOC-Proj79-Anno-BeanLifeCycle-Declaratice Approach-atPostConstructandatPreDestroy"/>
-<aop-project name="AsjpectjAOP-Proj19-Anno-AllAdvices"/>
-<aop-project name="IOC-Proj69-Anno-LayeredApplication-Student-RealTimeDI-UsingPropertyFile"/>
 <aop-project name="MVC-Proj016-MultiActionController-LooseCoupling"/>
+<aop-project name="IOC-Proj69-Anno-LayeredApplication-Student-RealTimeDI-UsingPropertyFile"/>
+<aop-project name="AsjpectjAOP-Proj19-Anno-AllAdvices"/>
 <aop-project name="IOC-Proj34-BankProj-LayeredApplication-NestedBeanFactory"/>
 <aop-project name="AsjpectjAOP-Proj17-ThrowsAdvice"/>
 <aop-project name="AOP-Proj04-Spring-AOP-Declarative-Security-BeforeAdvice"/>
-<aop-project name="TxMgmt-Proj05-AspectJ-100p"/>
 <aop-project name="DAO-Proj10-BasicCurdOperations-Profiles"/>
-<aop-project name="IOC-Proj01-BasicSetterInjection"/>
+<aop-project name="TxMgmt-Proj05-AspectJ-100p"/>
+<aop-project name="MVC-Proj036-Anno-LoginApp-DoublePostingProblemSolution"/>
 <aop-project name="IOC-Proj42-BankProj-LayeredApplication-NestedBeanFactory-UsingProperties_AC_with_context_place_holder_tag_in_context_nameSpace"/>
+<aop-project name="IOC-Proj01-BasicSetterInjection"/>
 <aop-project name="MVC-Proj024-UrlBasedViewResolver"/>
 <aop-project name="IOC-Proj20-NullInjection-POC"/>
+<aop-project name="MVC-Proj031-Anno-ListEmployees"/>
 <aop-project name="MVC-Proj009-AbstractCommandController-HotelSearchUseCase"/>
 <aop-project name="DAO-Proj05-SpringBoot-JDBCTemplate-DirectMethods-yml"/>
 <aop-project name="IOC-Proj26-DependencyLookup_Single IOC_Container Ext1"/>
@@ -28,6 +30,7 @@
 <aop-project name="DAO-Proj14-NamedParameters"/>
 <aop-project name="DAO-Proj23-MappingSQLOperationsAsSubClasses"/>
 <aop-project name="IOC-Proj74-Anno-@Inject@Named"/>
+<aop-project name="MVC-Proj040-Anno-FileDownload"/>
 <aop-project name="IOC-Proj26-DependencyLookup_Single IOC_Container Ext2"/>
 <aop-project name="DAO-Proj22-SimpleJdbcCall-ProcessingMultipleRecordsUsingFunction"/>
 <aop-project name="IOC-Proj46-BeanLifeCycle-Programmatic-Approach"/>
@@ -39,6 +42,7 @@
 <aop-project name="IOC-Proj31-DependencyCheck"/>
 <aop-project name="MVC-Proj014-SimpleFormController-initBinderMethod"/>
 <aop-project name="TxMgmt-Proj01-SpringAOP-Declarative"/>
+<aop-project name="MVC-Proj037-Anno-MiniProject-AllControllers-CURD-Operations"/>
 <aop-project name="IOC-Proj29-BasicSetterInjection-BeanScopes"/>
 <aop-project name="MVC-Proj011-SimpleFormController-FormValidations"/>
 <aop-project name="MVC-Proj017-MultiActionController-LooseCoupling2"/>
@@ -47,11 +51,13 @@
 <aop-project name="AOP-Proj09-Spring-AOP-Declarative-AfterAdvice-IdValidate"/>
 <aop-project name="MVC-Proj003-SecondApp"/>
 <aop-project name="IOC-Proj54-FactoryBean"/>
+<aop-project name="MVC-Proj032-Anno-AbstractCommandController"/>
 <aop-project name="DAO-Proj15-SpringBoot-NamedParameters"/>
 <aop-project name="IOC-Proj57-InstanceFactoryMethod-IPLScoreUseCase"/>
 <aop-project name="IOC-Proj22-BeanInheritance-UsingConstructorInjection"/>
 <aop-project name="AOP-Proj08-Spring-AOP-Declarative-AfterAdvice"/>
 <aop-project name="IOC-Proj63-PropertyEditors-BeanFactory"/>
+<aop-project name="MVC-Proj042-100p-FirstApp"/>
 <aop-project name="IOC-Proj65-Anno-Required"/>
 <aop-project name="MVC-Proj005-SecondApp-Improvised-URLFilenameViewController"/>
 <aop-project name="DAO-Proj13-BatchProcessing"/>
@@ -78,6 +84,7 @@
 <aop-project name="MVC-Proj010-SimpleFormController"/>
 <aop-project name="DAO-Proj07-SpringBoot-Profiles-yml"/>
 <aop-project name="AOP-Proj02-Spring-AOP-Declarative-AroundAdvice-ProxyInterfaces"/>
+<aop-project name="MVC-Proj041-Anno-Tiles"/>
 <aop-project name="IOC-Proj77-Anno-LayeredApplication-NestedBeanFactory-UsingAnnoResource,Named-AC"/>
 <aop-project name="IOC-Proj55-FactoryBean-IPLScoreUseCase"/>
 <aop-project name="IOC-Proj81-100p-StrategyDP-Spring"/>
@@ -94,6 +101,7 @@
 <aop-project name="IOC-Proj44-UtilNameSpace"/>
 <aop-project name="MVC-Proj018-AbstractWizardFormController"/>
 <aop-project name="IOC-Proj38-LayeredApplication-Student-RealTimeDI-UsingPropertyFile"/>
+<aop-project name="Proj016-JAX-WS-RI-SE-Provider-CL-SP-DL-AadharCardEnroll1"/>
 <aop-project name="AOP-Proj11-Spring-AOP-Declarative-ThrowsAdvice-ExceptionGrapher"/>
 <aop-project name="IOC-Proj45-BeanLifeCycle-Declaratice Approach"/>
 <aop-project name="MVC-Proj023-Interceptors"/>
@@ -102,6 +110,7 @@
 <aop-project name="MVC-Proj015-MultiActionController"/>
 <aop-project name="IOC-Proj14-CyclicDependenyManagement-Solution1-POC"/>
 <aop-project name="IOC-Proj67-Anno-Sterotypes"/>
+<aop-project name="MVC-Proj034-Anno-LoginApp-FormValids-ProgrammaticApproach"/>
 <aop-project name="IOC-Proj15-CyclicDependenyManagement-Solution2-POC"/>
 <aop-project name="IOC-Proj51-NeedOfLookUpMethodDL-Solution2UsingTraditionalDL-AwareInjectio"/>
 <aop-project name="SpringData-Proj01-JPA-SpringBoot-BasicCurdOperations"/>
@@ -113,6 +122,7 @@
 <aop-project name="IOC-Proj18-CollectionInjection-POC"/>
 <aop-project name="IOC-Proj53-MethodInjectionOrMethodReplacer"/>
 <aop-project name="IOC-Proj70-Anno-LookUpMethodDL-FinalSolution"/>
+<aop-project name="MVC-Proj033-Anno-LoginApp"/>
 <aop-project name="IOC-Proj64-CustomPropertyEditors-ApplicationContext"/>
 <aop-project name="MVC-Proj020-SimpleUrlHandlerMapping"/>
 <aop-project name="MVC-Proj006-SecondApp-Two-Container-Story"/>
@@ -120,11 +130,13 @@
 <aop-project name="IOC-Proj12-ConstructorInjectionResolving"/>
 <aop-project name="DAO-Proj21-SimpleJdbcCall-ProcessingMultipleRecordsUsingProcedure"/>
 <aop-project name="IOC-Proj36-P&amp;C NameSpacesUsingAC"/>
+<aop-project name="MVC-Proj035-Anno-LoginApp-FormValids-AnnotationApproach"/>
 <aop-project name="DAO-Proj04-SpringBoot-JDBCTemplate-DirectMethods"/>
 <aop-project name="AOP-Proj01-Spring-AOP-Declarative-AroundAdvice"/>
 <aop-project name="IOC-Proj11-LayeredApplication-Bank-RealTimeDI"/>
 <aop-project name="IOC-Proj49-NeedOfLookUpMethodDL-Problem"/>
 <aop-project name="IOC-Proj84-SpringBoot-Basics"/>
+<aop-project name="MVC-Proj039-Anno-FileUpload"/>
 <aop-project name="IOC-Proj27-FactoryMethodBeanInitialization"/>
 <aop-project name="MVC-Proj002-FirstApp"/>
 <aop-project name="DAO-Proj09-100p-BasicCurdOperations-Profiles"/>
@@ -140,6 +152,7 @@
 <aop-project name="DAO-Proj19-SpringBoot-SimpleJdbcInsert-AutoEmpNo-BPSPS"/>
 <aop-project name="IOC-Proj23-LayeredApplication-Student-RealTimeDI-WithBeanInheritance"/>
 <aop-project name="IOC-Proj68-Anno-BeanCollabaration-LooseCoupling-"/>
+<aop-project name="MVC-Proj029-BeanNameViewResolver"/>
 <aop-project name="MVC-Proj025-InternalResourceViewResolver"/>
 <aop-project name="AsjpectjAOP-Proj14-AroundAdvice-ProxyInterface"/>
 <aop-project name="DAO-Proj11-EmpSearch-WebApp"/>
@@ -164,4 +177,5 @@
 <aop-project name="MVC-Proj004-SecondApp-Improvised-ParameterizableViewController"/>
 <aop-project name="MVC-Proj012-MiniProject-AllControllers-CURD-Operations"/>
 <aop-project name="IOC-Proj04-BeanCollabaration-TightCoupling"/>
+<aop-project name="MVC-Proj030-Anno-FirstApp"/>
 </aop-reference-model>
