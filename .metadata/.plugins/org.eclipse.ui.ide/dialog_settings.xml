@@ -34,6 +34,7 @@
 			<item value="org.eclipse.ajdt.wizards/org.eclipse.ajdt.pluginExamples"/>
 			<item value="org.eclipse.emf.codegen.ecore.ui.wizardCategory"/>
 			<item value="org.eclipse.m2e"/>
+			<item value="Oracle"/>
 		</list>
 	</section>
 	<section name="ChooseWorkspaceDialogSettings">

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:security="http://www.springframework.org/schema/security"
+	xsi:schemaLocation="http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-4.2.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
+
+   <security:http use-expressions="true">
+     <security:intercept-url pattern="/index.jsp" access="permitAll"/>
+     <security:intercept-url pattern="/pages/admin.jsp" access="hasRole('ROLE_ADMIN')"/>
+     <security:intercept-url pattern="/pages/faculty.jsp" access="hasRole('ROLE_FACULTY')"/>
+     <security:intercept-url pattern="/pages/student.jsp" access="hasAnyRole('ROLE_FACULTY','ROLE_STUDENT')"/>
+     <security:form-login/>
+     <!-- <security:http-basic/> -->
+     <security:remember-me/>
+     <security:logout/>
+     <security:session-management invalid-session-url="/timeout.jsp">
+       <security:concurrency-control max-sessions="1" error-if-maximum-exceeded="true"/>
+     </security:session-management>
+     <security:access-denied-handler error-page="/access_denied.jsp"/>
+   </security:http>
+   
+   
+   <security:authentication-manager>
+     <security:authentication-provider>
+       <security:user-service>
+          <security:user name="raja" password="{noop}rani" authorities="ROLE_ADMIN"/>
+          <security:user name="rani" password="{noop}rani" authorities="ROLE_FACULTY"/>
+          <security:user name="pani" password="{noop}pani" authorities="ROLE_STUDENT"/>
+       </security:user-service>
+     </security:authentication-provider>
+   </security:authentication-manager>
+   
+
+</beans>

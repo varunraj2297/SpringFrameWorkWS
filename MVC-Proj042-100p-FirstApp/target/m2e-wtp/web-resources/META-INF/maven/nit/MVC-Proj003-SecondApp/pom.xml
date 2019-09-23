@@ -29,4 +29,7 @@
 	<build>
 		<finalName>MVC-Proj003-SecondApp</finalName>
 	</build>
+	<properties>
+	  <failOnMissingWebXml>false</failOnMissingWebXml>
+	</properties>
 </project>

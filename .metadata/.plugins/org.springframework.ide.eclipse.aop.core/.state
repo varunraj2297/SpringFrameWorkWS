@@ -12,9 +12,10 @@
 <aop-project name="IOC-Proj34-BankProj-LayeredApplication-NestedBeanFactory"/>
 <aop-project name="AsjpectjAOP-Proj17-ThrowsAdvice"/>
 <aop-project name="AOP-Proj04-Spring-AOP-Declarative-Security-BeforeAdvice"/>
+<aop-project name="MVC-Proj036-Anno-LoginApp-DoublePostingProblemSolution"/>
 <aop-project name="DAO-Proj10-BasicCurdOperations-Profiles"/>
 <aop-project name="TxMgmt-Proj05-AspectJ-100p"/>
-<aop-project name="MVC-Proj036-Anno-LoginApp-DoublePostingProblemSolution"/>
+<aop-project name="MVC-Proj045-100p-ListEmployees-AACDSI"/>
 <aop-project name="IOC-Proj42-BankProj-LayeredApplication-NestedBeanFactory-UsingProperties_AC_with_context_place_holder_tag_in_context_nameSpace"/>
 <aop-project name="IOC-Proj01-BasicSetterInjection"/>
 <aop-project name="MVC-Proj024-UrlBasedViewResolver"/>
@@ -37,6 +38,7 @@
 <aop-project name="DAO-Proj17-SimpleJdbcInsert-AutoEmpNo-BPSPS"/>
 <aop-project name="SpringData-Proj03-SpringBoot-BasicCurdOperations-NoSql-MongoDb"/>
 <aop-project name="IOC-Proj82-100p-MethodInjectionOrMethodReplacer"/>
+<aop-project name="MVC-Proj047-Boot-ShowingHome"/>
 <aop-project name="TxMgmt-Proj07-AspectJ-DistributedTxMgmt-Atomokis"/>
 <aop-project name="IOC-Proj21-BeanInheritance-UsingSetterInjection"/>
 <aop-project name="IOC-Proj31-DependencyCheck"/>
@@ -47,6 +49,8 @@
 <aop-project name="MVC-Proj011-SimpleFormController-FormValidations"/>
 <aop-project name="MVC-Proj017-MultiActionController-LooseCoupling2"/>
 <aop-project name="IOC-Proj58-0-BeanPostProcessor-POC"/>
+<aop-project name="MVC-Proj049-Boot-ListEmployees"/>
+<aop-project name="MVC-Proj048-Boot-LocaleApp"/>
 <aop-project name="IOC-Proj39-BankProj-LayeredApplication-NestedBeanFactory-UsingProperties-AC"/>
 <aop-project name="AOP-Proj09-Spring-AOP-Declarative-AfterAdvice-IdValidate"/>
 <aop-project name="MVC-Proj003-SecondApp"/>
@@ -54,6 +58,7 @@
 <aop-project name="MVC-Proj032-Anno-AbstractCommandController"/>
 <aop-project name="DAO-Proj15-SpringBoot-NamedParameters"/>
 <aop-project name="IOC-Proj57-InstanceFactoryMethod-IPLScoreUseCase"/>
+<aop-project name="MVC-Proj051-Boot-MiniProject"/>
 <aop-project name="IOC-Proj22-BeanInheritance-UsingConstructorInjection"/>
 <aop-project name="AOP-Proj08-Spring-AOP-Declarative-AfterAdvice"/>
 <aop-project name="IOC-Proj63-PropertyEditors-BeanFactory"/>
@@ -86,6 +91,8 @@
 <aop-project name="AOP-Proj02-Spring-AOP-Declarative-AroundAdvice-ProxyInterfaces"/>
 <aop-project name="MVC-Proj041-Anno-Tiles"/>
 <aop-project name="IOC-Proj77-Anno-LayeredApplication-NestedBeanFactory-UsingAnnoResource,Named-AC"/>
+<aop-project name="SpringSecurity-Proj01-NonMvc"/>
+<aop-project name="MVC-Proj046-100p-LoginApp"/>
 <aop-project name="IOC-Proj55-FactoryBean-IPLScoreUseCase"/>
 <aop-project name="IOC-Proj81-100p-StrategyDP-Spring"/>
 <aop-project name="DAO-Proj12-CallBackInterfaces"/>
@@ -97,6 +104,7 @@
 <aop-project name="AsjpectjAOP-Proj15-BeforeAdvice"/>
 <aop-project name="IOC-Proj24-CollectionMerging"/>
 <aop-project name="DAO-Proj03-100p-BasicCurdOperations"/>
+<aop-project name="MVC-Proj044-100p-ListEmployees"/>
 <aop-project name="IOC-Proj37-BeanCollabaration-LooseCouplingUsingAc"/>
 <aop-project name="IOC-Proj44-UtilNameSpace"/>
 <aop-project name="MVC-Proj018-AbstractWizardFormController"/>
@@ -162,17 +170,20 @@
 <aop-project name="IOC-Proj66-Anno-Autowired"/>
 <aop-project name="MVC-Proj021-ControlClassNameHandlerMapping"/>
 <aop-project name="MVC-Proj027-XMLViewResolver"/>
+<aop-project name="MVC-Proj050-Boot-FileUpload"/>
 <aop-project name="IOC-Proj48-AwareInjection"/>
 <aop-project name="AOP-Proj12-Spring-AOP-Declarative-PointCut"/>
 <aop-project name="IOC-Proj30-AutoWiring"/>
 <aop-project name="AspectjAOP-Proj21-SpringBoot-AroundAdvice"/>
 <aop-project name="IOC-Proj32-LayeredApplication-NestedBeanFactory"/>
 <aop-project name="TxMgmt-Proj02-SpringAOP-Declarative-Tx Attributes"/>
+<aop-project name="SpringSecurity-Proj02-MVC"/>
 <aop-project name="IOC-Proj78-Anno-LayeredApplication-NestedBeanFactory-UsingAnnoResource,Named-AC-setParent(-)"/>
 <aop-project name="IOC-Proj87-Spel"/>
 <aop-project name="AOP-Proj06-100p-Spring-AOP-Security-BeforeAdvice"/>
 <aop-project name="DAO-Proj16-SimpleJdbcInsert"/>
 <aop-project name="MVC-Proj022-HandlerMapping-AmbiguityProblemSolution"/>
+<aop-project name="MVC-Proj043-100p-FirstApp-Improvised"/>
 <aop-project name="TxMgmt-Proj08-Distributed-webapp"/>
 <aop-project name="MVC-Proj004-SecondApp-Improvised-ParameterizableViewController"/>
 <aop-project name="MVC-Proj012-MiniProject-AllControllers-CURD-Operations"/>
