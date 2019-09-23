@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:security="http://www.springframework.org/schema/security"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-4.2.xsd">
+
+	<!-- <bean id="bCryptEncoder"
+		class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder" />
+ -->
+	<security:http use-expressions="true">
+		<security:intercept-url pattern="/expired"
+			access="permitAll" />
+		<security:intercept-url pattern="/index.jsp"
+			access="permitAll" />
+		<security:intercept-url pattern="/status.htm"
+			access="hasAnyRole('ROLE_ADMIN')" />
+		<security:access-denied-handler
+			error-page="/access_denied.jsp" />
+		<security:form-login />
+		<security:logout />
+		<security:remember-me />
+		<!-- <security:session-management invalid-session-url="/invalid.jsp"> -->
+		<security:session-management>
+			<security:concurrency-control
+				error-if-maximum-exceeded="true" max-sessions="2"
+				expired-url="/expired" />
+		</security:session-management>
+	</security:http>
+
+
+	<security:authentication-manager>
+		<!-- <security:authentication-provider> -->
+		   
+			<!-- <security:user-service>
+				<security:user name="raja"
+					password="{noop}rani"
+					authorities="ROLE_CAPTAIN" />
+				<security:user name="rani"
+					password="{noop}rani"
+					authorities="ROLE_PASSENGER" />
+				<security:user name="jani"
+					password="{noop}jani"
+					authorities="ROLE_MANAGER" />
+			</security:user-service> -->
+		
+			<!-- <security:password-encoder hash="bcrypt"/> -->
+			<!-- <security:password-encoder
+				ref="bCryptEncoder" />
+			<security:user-service>
+				<security:user name="raja"
+					password="$2a$09$4SXFIucrwynT2QzyFQ1JvuE1oDVL19z6D4VVI43cBhPmnixDAATmi"
+					authorities="ROLE_CAPTAIN" />
+				<security:user name="rani"
+					password="$2a$09$4SXFIucrwynT2QzyFQ1JvuE1oDVL19z6D4VVI43cBhPmnixDAATmi"
+					authorities="ROLE_PASSENGER" />
+				<security:user name="jani"
+					password="$2a$09$LFmWJPjxBoKLESB4hRTujOV.evoITvXKG4TivN8YGvzt8LCjrkftm"
+					authorities="ROLE_MANAGER" />
+			</security:user-service> -->
+			
+			<!-- <security:user-service properties="classpath:com/nt/commons/info.properties"/> -->
+			
+			<!-- <security:jdbc-user-service data-source-ref="ds" users-by-username-query="SELECT UNAME,PWD,STATUS FROM AERO_USERS WHERE UNAME=?"
+			                                authorities-by-username-query="SELECT ROLE_ID,ROLE_NAME,UNAME FROM AERO_ROLES WHERE UNAME=?" />
+			 -->
+			 
+			 
+		<!-- </security:authentication-provider> -->
+		
+		<security:ldap-authentication-provider 
+		    user-search-filter="(uid={0})" user-search-base="ou=users"
+			group-search-filter="(uniqueMember={0})" group-search-base="ou=groups"
+			group-role-attribute="cn" role-prefix="ROLE_">
+		
+		
+		</security:ldap-authentication-provider>
+	</security:authentication-manager>
+	
+	<security:ldap-user-service server-ref="ldapServer" user-search-filter="(uid={0})" />
+	<security:ldap-server id="ldapServer" url="ldap://localhost:10389/o=aero"
+		manager-dn="uid=admin,ou=system" manager-password="secret" />
+
+
+
+
+</beans>
+
+
+

@@ -5,28 +5,71 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd
 		http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-4.2.xsd">
 
-   <security:http create-session="stateless">
-    <security:intercept-url pattern="/index.jsp" access="permitAll"/>
-    <security:intercept-url pattern="/status.htm" access="hasAnyRole('ROLE_CAPTAIN','ROLE_PASSENGER')"/>
-    <security:access-denied-handler error-page="/access_denied.jsp"/>
-    <security:form-login/>
-    <security:logout/>
-    <security:remember-me/>
-    <!-- <security:session-management invalid-session-url="/invalid.jsp"> -->
-   <!--  <security:session-management>
-     <security:concurrency-control error-if-maximum-exceeded="true" max-sessions="2" expired-url="/timeout.jsp"/>
-    </security:session-management>-->
-   </security:http> 
+	<!-- <bean id="bCryptEncoder"
+		class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder" />
+ -->
+	<security:http use-expressions="true">
+		<security:intercept-url pattern="/expired"
+			access="permitAll" />
+		<security:intercept-url pattern="/index.jsp"
+			access="permitAll" />
+		<security:intercept-url pattern="/status.htm"
+			access="hasAnyRole('ROLE_CAPTAIN','ROLE_PASSENGER')" />
+		<security:access-denied-handler
+			error-page="/access_denied.jsp" />
+		<security:form-login />
+		<security:logout />
+		<security:remember-me />
+		<!-- <security:session-management invalid-session-url="/invalid.jsp"> -->
+		<security:session-management>
+			<security:concurrency-control
+				error-if-maximum-exceeded="true" max-sessions="2"
+				expired-url="/expired" />
+		</security:session-management>
+	</security:http>
 
 
-    <security:authentication-manager>
-     <security:authentication-provider>
-      <security:user-service>
-        <security:user name="raja" password="{noop}rani" authorities="ROLE_CAPTAIN"/>
-        <security:user name="rani" password="{noop}rani" authorities="ROLE_PASSENGER"/>
-        <security:user name="jani" password="{noop}jani" authorities="ROLE_MANAGER"/>
-      </security:user-service>
-     </security:authentication-provider>
-    </security:authentication-manager>
+	<security:authentication-manager>
+		<security:authentication-provider>
+		   
+			<!-- <security:user-service>
+				<security:user name="raja"
+					password="{noop}rani"
+					authorities="ROLE_CAPTAIN" />
+				<security:user name="rani"
+					password="{noop}rani"
+					authorities="ROLE_PASSENGER" />
+				<security:user name="jani"
+					password="{noop}jani"
+					authorities="ROLE_MANAGER" />
+			</security:user-service> -->
+		
+			<!-- <security:password-encoder hash="bcrypt"/> -->
+			<!-- <security:password-encoder
+				ref="bCryptEncoder" />
+			<security:user-service>
+				<security:user name="raja"
+					password="$2a$09$4SXFIucrwynT2QzyFQ1JvuE1oDVL19z6D4VVI43cBhPmnixDAATmi"
+					authorities="ROLE_CAPTAIN" />
+				<security:user name="rani"
+					password="$2a$09$4SXFIucrwynT2QzyFQ1JvuE1oDVL19z6D4VVI43cBhPmnixDAATmi"
+					authorities="ROLE_PASSENGER" />
+				<security:user name="jani"
+					password="$2a$09$LFmWJPjxBoKLESB4hRTujOV.evoITvXKG4TivN8YGvzt8LCjrkftm"
+					authorities="ROLE_MANAGER" />
+			</security:user-service> -->
+			
+			<!-- <security:user-service properties="classpath:com/nt/commons/info.properties"/> -->
+			
+			<security:jdbc-user-service data-source-ref="ds" users-by-username-query="SELECT UNAME,PWD,STATUS FROM AERO_USERS WHERE UNAME=?"
+			                                authorities-by-username-query="SELECT ROLE_ID,ROLE_NAME,UNAME FROM AERO_ROLES WHERE UNAME=?" />
+			
+		</security:authentication-provider>
+	</security:authentication-manager>
+
+
 
 </beans>
+
+
+
